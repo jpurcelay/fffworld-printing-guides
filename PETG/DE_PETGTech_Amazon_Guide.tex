@@ -1,0 +1,363 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
+
+\DeclareUnicodeCharacter{00A0}{ } %este rollo es para evitar un error por la aparición de un caracter invisible e hijo de puta
+
+\usepackage{caption}
+\usepackage{subcaption}
+
+\renewcommand{\familydefault}{\sfdefault} % cambiamos la fuente a una sans
+
+\usepackage{float} % para que floten las imagenes o algo asi...
+\usepackage{wallpaper} %paquete para usar una imagen como encabezado!
+\usepackage{hyperref} %para usar hypervinculos 
+\usepackage[export]{adjustbox} %para usar marcos en imagenes
+\usepackage{eurosym} % para el euro
+\usepackage{transparent} %para las marcas de agua
+\usepackage{eso-pic}  %para las marcas de agua
+
+\definecolor{azul_marcos}{RGB}{0,128,159} %defino el color azul de los marcos
+\usepackage{sectsty} %esto es para cambiar el color de las fuentes creo
+\renewcommand{\familydefault}{\sfdefault} % cambiamos la fuente a una sans
+\sectionfont{\color{azul_marcos}}  % sets colour of sections
+\subsectionfont{\color{azul_marcos}}  % sets colour of sections
+
+
+\usepackage{pdfpages} %para insertar pdfs
+\usepackage{amssymb}
+\usepackage{pstcol} % para color
+\usepackage{pst-node} % para diagramas
+\usepackage{pst-plot} % para representacion de dat
+\usepackage[spanish]{babel}
+\addto\captionsspanish{\renewcommand\chaptername{Bloque}}
+%\usepackage[total={18cm,21cm},top=2cm, left=2cm]{geometry}
+\usepackage{anysize}
+\pagestyle{plain}
+%\markboth{left head}{right head}
+%\markright{Guía de impresión ABS Tech}
+\marginsize{3cm}{2cm}{2.5cm}{1cm}
+\title{Guía de impresión ABS Tech}
+\date{}
+
+%configuracion de la marca de agua
+\AddToShipoutPicture{
+    \put(0,0){
+        \parbox[b][\paperheight]{\paperwidth}{%
+            \vfill
+            \centering
+            {\transparent{0.1}\includegraphics[scale=1.25]{FOTOS/logofff}}%
+            \vfill
+        }
+    }
+}
+
+\begin{document}
+\ULCornerWallPaper{1}{FOTOS/header}
+\LLCornerWallPaper{1}{FOTOS/footer}
+%\maketitle
+%\tableofcontents
+\includepdf{PDF/PORTADA.pdf}
+\section{﻿Was ist der PETG Tech filament?}PETG Tech ist ein Faden für den 3D-Druck FFF/FDM von Polyäthylenterephthalatglykol (P.E.T.G.), speziell dafür entworfen das Beste von PLA und ABS zu vereinen um einen beständigen und leicht druckbaren Thermoplast zu schaffen.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,cfbox=azul_marcos 1pt 0pt]{FOTOS/PETGKILOAZUL}
+\end{figure}
+\section{Warum sollten Sie das Filament PETG 3D Tech verwenden?}
+PETG Tech ist einer der vielseitigsten Fäden auf dem Markt, da er die besten Eigenschaften von anderen Materialien kombiniert.
+\begin{itemize}
+\item PETG ist sehr beständig, fast ebenso sehr wie ABS, so dass es verwendet werden kann um Teile zu bauen, die Spannung durch Traktion, Druck oder den Aufprall erleiden werden.
+\item Das PETG hält der Temperatur auch besser stand als PLA und es hat einen guten Widerstand gegen Chemikalien und Lösungsmittel. Es hält UV-Licht auch besser als PLA und ABS stand. .
+\item Da es wenig wasseranziehendes Material ist, wird es auch besser und leichter erhalten als das PLA. 
+\item Außerdem zeigen PETG Filamente viel weniger "Krümmung" (oder Tendenz, sich zu deformieren, wenn es abkühlt kühlend) als ABS und mit den richtigen Methoden kann es völlig kontrolliert werden. Deshalb ist dies der Grund, warum PETG Fäden im Gegensatz zu den anderen das Drucken von großen Volumina in Hausdruckern ermöglichen.
+\item Obwohl der PETG Faden nicht zertifiziert ist mit Nahrungsmitteln in Kontakt kommen zu dürfen (FDA Lebensmittelsicherheit) haben es die Pellets, aus welches es produziert wird und dies macht es für möglichen Kontakt mit Nahrung geeigneter als andere Materialien; Später analysieren wir diesen Aspekt tiefergehend.
+\item Das PETG ist natürlich durchscheinend und glänzend. Obwohl es auch in Deckfarben verkauft wird, bewahrt es einen glänzenden Look.
+\item PETG ist ein recyclebares und biologisch abbaubares Material, wir auch PLA. 
+
+\end{itemize}
+Unten ist eine vergleichende Tabelle zwischen PETG, PLA und ABS:  
+\begin{table}[H]
+\centering
+\begin{tabular}{l|c|c|c|}
+\cline{2-4}
+                                                                                      & \cellcolor[HTML]{FFFFFF}PLA & \cellcolor[HTML]{FFFFFF}ABS & \cellcolor[HTML]{FFFFFF}PETG \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}Hohe Schlagfestigkeit}          &                             & X                           & X                            \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}Niedrige Verformung nach dem Abkühlen (Verwerfen)} & X                           &                             & X                            \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}Schüttelt Feuchtigkeit - Higroskopisch}                    &                             & X                           & X                            \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}Biologisch abbaubar}                           & X                           &                             & X                            \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}FDA Lebensmittelsicherheit *}                       &                             &                             & X                            \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}Gute UV-Beständigkeit}            &                             &                             & X                            \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}Kein Geruch beim Drucken}                 & X                           &                             & X                            \\ \hline
+\end{tabular}
+\end{table}
+\section{Technische Daten und Druckparameter}
+\begin{table}[H]
+\centering
+\caption*{Datenblatt}
+\begin{tabular}{|
+>{\columncolor[HTML]{FFFFFF}}l |
+>{\columncolor[HTML]{FFFFFF}}c |}
+\hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Material}}   & Tereftalato de polietileno glycol   \\ \hline
+\textbf{Verfügbare Farben}              & 5 (3 Translucid, 2 Undurchsichtig)                 \\ \hline
+\textbf{Verfügbare Formates}             & 1kg, 250gr         \\ \hline
+\textbf{Thermische Deflexionstemperatur} & 70               \\ \hline
+\textbf{Fusionstemperatur}            & 200ºC              \\ \hline
+\textbf{Dekompositionstemperatur}    & \textgreater 280ºC \\ \hline
+\textbf{Dichte}                         & 1.27 gr / cm3      \\ \hline
+\textbf{Schlagfestigkeit}                         & 100 kg-cm / cm      \\ \hline
+\textbf{Maximale Dehnbarkeit}              & 140\%              \\ \hline
+\end{tabular}
+\end{table}
+
+%TABLA PARAMETROS IMPRESION MEDIA
+
+\begin{table}[H]
+\centering
+\caption*{Parameter für durchschnittlichen Druck}
+\begin{tabular}{|
+>{\columncolor[HTML]{FFFFFF}}l |
+>{\columncolor[HTML]{FFFFFF}}c |}
+\hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Empfohlene Drucktemperatur}} & 245º              \\ \hline
+\textbf{Empfohlene Druckgeschwindigkeit}                         & 55 mm/s              \\ \hline
+\textbf{Schichthöhe}                                  &  0.2 mm        \\ \hline
+\textbf{Temperatur des heißen Bettes}                                  &  70º - 85º        \\ \hline
+\textbf{Schichtlüfter}                                  &  75\%        \\ \hline
+\textbf{Extrusionsmultiplikator **}                                  &  85\% / 100\%        \\ \hline
+
+\textbf{Rückzug ***}                                      & Normal oder erhöht                 \\ \hline
+\end{tabular}
+\end{table}
+
+%TABLA PARAMETROS RESISTENCIA
+
+\begin{table}[H]
+\centering
+\caption*{Empfohlene Druckparameter für maximale Stabilität und geringere Transparenz *}
+\begin{tabular}{|
+>{\columncolor[HTML]{FFFFFF}}l |
+>{\columncolor[HTML]{FFFFFF}}c |}
+\hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Empfohlene Drucktemperatur}} & 260º              \\ \hline
+\textbf{Empfohlene Druckgeschwindigkeit}                         & 40 mm/s              \\ \hline
+\textbf{Schichthöhe}                                  &  0.2 mm        \\ \hline
+\textbf{Temperatur des heißen Bettes}                                  &  70º - 85º        \\ \hline
+\textbf{Schichtlüfter}                                  &  Desactivado       \\ \hline
+\textbf{Extrusionsmultiplikator **}                                  &  85\% / 100\%        \\ \hline
+
+\textbf{Rückzug ***}                                      & Normal oder erhöht                 \\ \hline
+\end{tabular}
+\end{table}
+
+%TABLA PARAMETROS TRANSPARENCIA
+
+\begin{table}[H]
+\centering
+\caption*{Empfohlene Druckparameter für Maximaltransparenz * und weniger Widerstand}
+\begin{tabular}{|
+>{\columncolor[HTML]{FFFFFF}}l |
+>{\columncolor[HTML]{FFFFFF}}c |}
+\hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Empfohlene Drucktemperatur}} & 235º - 240º              \\ \hline
+\textbf{Empfohlene Druckgeschwindigkeit}                         & 70 mm/s              \\ \hline
+\textbf{Schichthöhe}                                  &  0.3 mm        \\ \hline
+\textbf{Anzahl der äußeren Schalen}                                  &  1        \\ \hline
+\textbf{Infill}                                  &  0\%        \\ \hline
+\textbf{Temperatur des heißen Bettes}                                  &  70º - 85º        \\ \hline
+\textbf{Schichtlüfter}                                  &  100\%        \\ \hline
+\textbf{Extrusionsmultiplikator **}                                  &  85\% / 100\%        \\ \hline
+
+\textbf{Rückzug ***}                                      & Normal oder erhöht                 \\ \hline
+\end{tabular}
+\end{table}
+
+* nur kristalliner Look kann in hohlen Strukturen mit einem einzelnen Perimeter erwartet werden, idealerweise glasförmige Objekte.
+
+** in einigen Druckern kann es notwendig sein die Multiplikatorenextrusion zu reduzieren. Wenn Sie einen Überschuss an Material im gedruckten Stück in der Form von kleinen Kunststoffkugeln sehen oder bemerken, dass die Düse mit dem Werkstück während des Druckens zusammenstößt, dann reduzieren Sie die Multiplikatorenextrusion um 85\% und steigern Sie sie allmählich, bis Sie den Punkt finden, wo die Extrusion angemessen ist.
+
+*** Wenn Sie Fadenprobleme haben, versuchen Sie die Geschwindigkeit und den Abstand von der Retraktion zu steigern.
+\\\\
+Sie können unsere vollständigen Druckprofile der Hauptprogramme (Cura, Slic3r und SImplify3D) von unserer Website herunterladen:  
+\\\\
+\centerline{ {\huge \url{www.fffworld.com/documentation} } }
+\\\\
+Die optimalen Parameter hängen vom 3D-Drucker ab, den Sie benutzen, jedoch sind sie gute Parameter für einen Ansatzpunkt. Mit einigen Drucken werden Sie in der Lage sein die Grenzen und perfekte Einstellung für Ihre Maschine zu finden. 
+\section{PETG Tech: Die Merkmale und die Hinweise zum Drucken}
+	\subsection{Der Widerstand von PETG}PETG kann verwendet werden um äußerst beständige Teile zu herzustellen.
+\\\\
+Das PETG ist leicht flexibel, und dies ermöglicht, dass es Energie vor dem Brechen absorbiert, aber was wirklich den Unterschied zu anderen Materialien macht, ist die Konsistenz der Bindung zwischen Schichten, die dieses Material liefert.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,cfbox=azul_marcos 1pt 0pt]{FOTOS/PETG250NEGRO}
+\end{figure}
+Die Haftung der Schichten ist so fest, dass die Stücke manchmal größeren Widerstand auf der Traktion zwischen den Schichten als auf der längsverlaufenden Achse der ausgestoßenen Fadenbahn haben.
+\\\\Der Widerstand zwischen den Schichten kann damit gesteigert werden die Temperatur anzuheben oder die Geschwindigkeit zu vermindern. Dies erlaubt, dass das geschmolzene Material heißer und auf eine langsamere Weise aufgebracht wird.
+\\\\Jedoch wird der Look des Stücks schlechter sein und die Transparenz in Folge plastischer Spuren reduziert und leicht durch die Übertemperatur deformiert sein. Der Schichtventilator spielt hier zugunsten der Transparenz und des Endprodukts eine große Rolle, aber auch in Richtung der Gesamtstärke vom Stück.
+\\\\Beachten Sie das oben Genannte wenn Sie laminieren, in Abhängigkeit von dem Stück und seiner Nutzungsart.
+	\subsection{Die Transparenz von PETG}PETG ist ein durchscheinendes Material wie das PET, das dafür genutzt wird um Kunststoffbehälter völlig durchsichtig zu machen. Jedoch muss in Betracht gezogen werden, dass sich die Herstellungsverfahren dieser Behälter sehr von jenen unterscheiden, die beim 3D-Druck verwendet werden.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,cfbox=azul_marcos 1pt 0pt]{FOTOS/BOTELLASPET}
+\end{figure}
+Und aus diesem Grund ist es kaum möglich ein kristallklares 3D gedrucktes Objekt hinzubekommen, wenn es mit der FFF/FDM-Technik hergestellt wird.
+\\\\
+Zusätzlich zu dem Ansammeln von waagerechten Perimetern reduziert das Wachsende von der Dicke der Wände die Transparenz.
+\\\\
+Wenn jedoch Ihr Ziel ist ein transparentes Stück hinzubekommen, bieten wir einige Kunststückchen an. 
+\\\\
+Al generelle Regel verringert eine höhere Temperatur oder eine niedrigere Geschwindigkeit die Transparenz des gedruckten Teils. Dies liegt daran, dass das heiße Plastik dazu tendiert auszulaufen, was gekrümmte Flächen schafft, die das Licht ablenken.
+\\\\
+Mit höheren Geschwindigkeiten und niedrigeren Temperaturen ist es möglich die gezogenen Plastikfäden auf eine regelmäßigere Weise abzulegen, was die Transparenz verbessert
+\\\\
+Je nach Achse, wo Sie ein durchscheinenderes Ende brauchen, können Sie auch den folgenden Hinweisen folgen.
+		\subsubsection{Die Transparenz der Z-Achse (senkrecht) }Die Transparenz des Stücks wird eine Funktion der Höhe des Stücks und der Füllungen sein, die verwendet werden. 
+\\\\
+Auch die Anzahl von Schichten sollte nach unserer Erfahrung geringer sein, weshalb die Schichthöhe höher sein muss um ihre Anzahl zu verringern.
+\\\\
+Wir müssen zwischen den Schichten von jenen unterscheiden, die die Basis des Stücks ausmachen, und die direkt auf die Druckoberfläche gedruckt werden, die als Bedeckung oder oberste Einfriedung dienen.
+\\\\
+In den ersten wird die Transparenz gut sein, da das geschmolzene Plastik eine flache und regelmäßige Gestalt annimmt wenn es auf einer flachen Oberfläche aufgebracht wird.
+\\\\
+Die oberen tendieren jedoch dazu sich zu krümmen, da sie auf den äußeren waagerechten Grenzen und der gefüllten Struktur ruhen.
+\\\\
+Dies ist, warum die niedrigeren Schichten bessere Transparenz als die oberen Schichten besitzen. 
+\\\\
+Um dieses Problem zu vermindern, können Sie die Geschwindigkeit steigern mit der der Drucker die obersten Schichten ausstößt, so dass sie gespannter und weniger irregulär sind. Dies ist eine fortschrittliche Option, die nicht in allen laminierten Programmen verfügbar ist. 
+		\subsubsection{Die Transparenz der XY-Ebene (Horizontale)}In der XY-Ebene ist die Art um die Transparenz zu steigern, eine Reduktion der Anzahl von Grenzen.
+\\\\
+Jedoch, wenn das Stück irgendeine Art Füllung hat, subtrahiert es ebenfalls von der Transparenz, so dass es nur möglich ist Stücke mit hoher Transparenz hinzubekommen, wenn diese wie ein Glas geformt sind. 
+\\\\
+Für diese Arten von Teilen bieten die Laminierprogramme die Option an durch stetiges Steigern der Z Position zu drucken, wenn Sie mit einer einzelnen Grenze drucken wollen. Diese Option ist bekannt als spiralisieren (Curas) oder der Vasenmodus (Slic3r und Simplify) und ist das, was wir empfehlen um die besten Ergebnisse in Bezug auf Transparenz zu bekommen.
+\\\\
+Da wir schon erwähnt haben, dass je höher die Geschwindigkeit und je niedriger die Temperatur ist, desto besser die Transparenz als Folge einer regelmäßigeren Anordnung und Zeit des Plastiks, so dass die Tests so ausgerichtet werden sollten um die Höchstgeschwindigkeit und die Tiefsttemperatur der Stücke zu finden um zu Drucken ohne die Schichten zu trennen. 
+\\\\
+Eine Geschwindigkeit von 70 mm/s mit einer Temperatur von 240º und einer Schichthöhe von 0,25 mm sollte im Vasenmodus gute Transparenz von gedruckten Stücken liefern obwohl dies abhängig vom Werkstück und auf der Maschine ist.
+	\subsection{Der 3D PETG Faden und die Lebensmittelsicherheit (FDA Lebensmittelsicherheit) von 3D druckten Objekte}Das PETG und das PET sind sehr ähnliche Plastiken und es ist bekannt, dass das Letztere bereits bei der Herstellung von Nahrungskunststoffbehältern verwendet wird. Dies liegt daran, dass beide eine Bescheinigung vom FDA haben, das die Gesundheit der darin aufbewahrten Nahrung garantiert, welche damit in Kontakt gekommen ist. 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,cfbox=azul_marcos 1pt 0pt]{FOTOS/PETGKILOROJO}
+\end{figure}
+Während dies wahr ist, muss es heißen, dass sich die Bescheinigung auf die Pellets (den Rohstoff) bezieht, von denen die Fäden von PETG produziert werden und dass solche Bescheinigung nicht direkt aus verschiedenen Gründen ausgestellt werden können, was wir genauer analysieren wollen.
+\\\\
+EZuerst enthalten die 3D Druckfäden oft Zusätze um ihnen Merkmale zu geben, die ihre Leistung verbessern, wenn sie gebraucht werden. Die Einbeziehung von jedem Zusatz, der keine FDA Lebensmittelsicherheits-Zertifikat hat, hindert sie daran, angewandt zu werden.
+\\\\
+Auf der anderen Seite werden die meisten Fäden mit Farben gemischt um ihnen Farbe zu geben und obwohl diese Farben beglaubigt sind, sind ROHS nicht bezeugte FDA Lebensmittelsicherheit.
+\\\\
+Das erste (ROHS) beglaubigt die Abwesenheit von schädlichen Elementen (wie Blei oder Quecksilber), während die zweite die absolute Sicherheit des beglaubigten Objekts zu dem Ausmaß zertifiziert wird, dass es lange in Kontakt mit bestimmter Nahrung für den Verbrauch sein kann. Deshalb verhindert die bloße Addition von Nicht-FDA Lebensmittelsicherheitsfarben ihre Inbetrachtziehung als solche.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,cfbox=azul_marcos 1pt 0pt]{FOTOS/NOZZLES}
+\caption*{Die Düse kann Blei enthalten}
+\end{figure}
+Sogar im Falle von Fäden, deren Ausgangsstoff, deren Zusätze und deren Farben FDA-zugelassen sind, verhindert der Prozess auf einer häuslichen Maschine zu drucken, das entstehende Objekt daran FDA-zugelassen zu sein. Dies ist eine Folge der Metalle, mit denen die Düse (Messing) und der Extruder, der den Faden herausdrückt hergestellt wurden.
+\\\\
+Für die ganz oben genannt ist es nicht möglich Objekte mit Hilfe des FFF 3D-Drucks zu erstellen, die der FDA-Lebensmittelsicherheit entsprechen.
+\\\\
+Mit allen oben genannten ist notwendig den Unterschied zwischen Extra und allgemeiner Lebensmittelsicherheit einzuführen.
+\\\\
+Die Ersteren werden von Agenturen wie der FDA, die die Gesundheit garantiert und verpflichtet ist gewisse Richtlinien in ihren Produkten anzubieten.
+\\\\
+Die Zweiten die allgemeine sichere Nahrungsmittelversorgung ist das Vertrauen, das jeder auf Grundlage von ihrer Gründe und Erfahrung haben kann, dass ein besonderes Essen nicht nach seiner Manipulation jedes schädliche Element enthält
+\\\\
+Während 3D Drucke nicht von der FDA beglaubigt werden können, ist es sicher anzunehmen, dass niemand durch das Essen eines Kekses berauscht werden kann, der in einer 3D gedruckten Keksform hergestellt oder geschnitten worden ist, oder einer Flüssigkeit, die in einem 3D-gedruckten Glas aufbewahrt wurde.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,cfbox=azul_marcos 1pt 0pt]{FOTOS/CORTADORGALLETAS}
+\end{figure}
+Jetzt müssen Sie einige Dinge in Betracht ziehen, wenn es dazu kommt Objekte zu drucken, die in Kontakt mit Nahrung kommen werden:
+\\\\
+3D FFF/FDM Druck tendiert dazu kleine Räume und Zwischenräume auf der Oberfläche der Stücke zu lassen, die die Entwicklung von Bakterien und Mikroorganismen begünstigen. Wenn das Stück nur einmal benutzt wird, kann dies kein Problem werden, aber wenn sie es häufiger verwenden, könnte es zu Problemen führen, weshalb Sie das Objekt mit Lebensmittelsicherem Epoxidanstrich versiegeln sollten 
+\\\\
+Solche Organismen sollten absterben, wenn sie mit der hohen Temperatur des Wassers einer Geschirrspülmaschine in Kontakt kommen, aber solche Temperaturen können die Teile deformieren.
+\\\\
+Der Kontaktzeit zwischen der Nahrung und dem Stück ist wichtig; eine Flasche ist nicht das Gleiche wie eine Gabel oder ein Ausstecher.
+\section{Die Probleme und Lösungen, wenn mit 3D-PETG Fäden gedruckt wird}
+	\subsection{Wie man das PETG richtig mit der Druckfläche verbindet}Das PETG hat weniger Krümmungsprobleme als das ABS und es besser kontrolliert werden, jedoch ist es notwendig, dass die erste Schicht perfekt auf die Druckoberfläche geklebt wird um auf eine zufriedenstellende Weise zu drucken.
+\\\\
+Die beste Methode ist ein warmes Bett bei 75º zu verwenden und auf das Glas durch Anwenden des Standardlacks zu drucken. Für den Fall, dass Sie kein heißes Bett haben, wird empfohlen die Floßmethode des Laminierprogramms zu verwenden und die Geschwindigkeit zu verringern, damit es ordentlich auf der Druckoberfläche klebt.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,cfbox=azul_marcos 1pt 0pt]{FOTOS/BRIM}
+\end{figure}
+Probleme sind beobachtet worden, wenn man versucht PETG 3D-Fäden auf blaues Klebeband (3m BlueTape) oder Körperband zu drucken, so dass wir empfehlen die erste beschriebene Methode zu verwenden: Lack, Glas und Bett bei 75º
+	\subsection{Die Unterstützungsstrukturen in PETG}Wir haben schon darüber gesprochen wie stark die Bindung zwischen den Schichten von geschmolzenem PETG ist, jedoch weist dies eine Herausforderung auf, wenn man Stücke druckt, die intensiven Gebrauch von Unterstützungen machen.
+\\\\
+PETG Unterstützungen stehen im Zusammenhang mit größeren Schwierigkeiten und der Look der Oberfläche in direktem Kontakt mit der Unterstützung ist grob und unregelmäßig.
+\\\\
+Die modernsten Schichtungsprogramme erlauben Ihnen, die waagerechte und senkrechte Entfernung zwischen dem Teil und den Unterstützungen wie auch die Füllung und die Geometrie von den Unterstützungsstrukturen zu konfigurieren.
+\\\\
+Es wird empfohlen diese Abstände zu erhöhen, die Füllung der Unterstützung zu reduzieren und sich für eine einfache Geometrie von Zeilen zu entscheiden, wenn Sie einige der erwähnten Probleme haben, wenn Sie Unterstützungsstrukturen bei Ihren Teilen verwenden.
+	\subsection{Fadenproblemen}Die Fähigkeit von PETG zu kleben macht es sehr anfällig Stückchen in der Form von Streifen in den gedruckten Stücken zu hinterlassen.
+\\\\
+Außerdem, wenn Einzelteile gleichzeitig gedruckt werden, können diese kleinen Streifen zwischen den Teilen erscheinen, die die Düse konstant von einem zum anderen springen muss.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,cfbox=azul_marcos 1pt 0pt]{FOTOS/RETRACCION1}
+\caption*{Teile mit Fadenproblemen}
+\end{figure}
+Wie wir zuvor schon kommentiert haben, kann diese Wirkung dadurch reduziert werden, indem Sie die Retraktion verwenden, aber es wird auch empfohlen die Teile sequenziell statt simultan zu drucken.
+\\\\
+Durch sequentiellen Druck meinen wir ein Teil nach dem anderen zu drucken. 
+\\\\
+Dies kann auf zwei verschiedene Weisen erledigt werden: 
+\begin{itemize}
+\item Die triviale Option ist nur ein Teil zu Druck und wenn es fertig ist, diesen Prozess zu wiederholen. 
+\item Die zweite Alternative, mehr fortschrittliche und mit einigen Beschränkungen, soll die schichtende Option benutzen, die einige Programme anbieten, statt ein Teil auf einmal zu drucken. Die Maximalgröße der Teile, die mit Hilfe dieser Methode gedruckt werden können, kommt von den Dimensionen der Düse und der Veranlagung von der Achse des Druckers. Wir empfehlen, dass Sie Information einholen, wie man die Optionen benutzen kann um das Risiko nicht einzugehen den Drucker zu beschädigen. Sie können dies über den folgenden Link tun: 
+\end{itemize}
+\url{https://www.simplify3d.com/support/tutorials/multi-part-printing/}\\
+\url{http://manual.slic3r.org/advanced/sequential-printing}\\
+\url{https://ultimaker.com/en/community/3843-force-cura-to-print-objects-separately}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/SEQUENTIALPRINTING}
+\caption*{Vergleichen des Drucks zwischen gleichzeitigem und sequentiellem Druckverfahren}
+\end{figure}
+\section{Würden Sie unser Projekt gerne unterstützen?}
+Alle Mitglieder von FFF World lieben den 3D-Druck und die Maker-Gemeinde. Wir sind glücklich in der Lage zu sein an Projekten zu arbeiten, bei denen wir unsere ehrliche Leidenschaft liefern können. In der Zukunft hoffen wir in der Lage zu sein mehr Materialien, mehr Farben und mehr Formate zu entwickeln.
+\\\\
+Daher ist es eine der besten Aktionen um uns zu helfen, sofern Sie es wollen und mit unserern Filamenten zufrieden sind, uns auf Amazon 5 Sterne zu geben.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,cfbox=azul_marcos 1pt 0pt]{FOTOS/AMAZON_FIVE_STARS}
+\caption*{Vielen Dank!}
+\end{figure}
+\subsection{Andere Materialien mit fantastischen Charakteristika auf Amazon}
+\begin{description}
+\item[FlexiSMART Tech:] Entwickelt, um die Abnutzung und den Verschleiß von technischen Drücken zu widerstehen.
+\item[ABS Tech:] Minimierter Warping-Effekt. Hohe Leistung bei technischen Anwendungen.
+\item[PETG Tech:] Maximale mechanische Beständigkeit. Beständig beim Kontakt mit Wasser und UV-Strahlen. Geegnet für die Nahrungsbenutzung.
+\item[FilaMETAL:] PLA mit nichtscheuernder, metallischer Ladung, die Ihren Skulpturen ein spektakuläres mechanisches Finish gibt.
+\item[PC Tech:] Polycarbonate mit einer hohen Temperaturbeständigkeit und hervorragenden metallischen Eigenschaften.
+\item[Nylon Tech:] Druckbar bei geringen Temperaturen. Widerstand gegen physische Krafteinwirkung mit einem gewissen Grad an Flexibilität.
+\item[PVA Tech:] Löslich in Wasser, Filament angegeben für die Verwendung als Trägermaterial. Ausgezeichnet mit PLA kompatibel.
+\item[HIPS Tech:] Löslich in Limonen Filament angegeben für die Verwendung als Trägermaterial. Gute mechanische Beständigkeit und eine ausgezeichnete Kompatibilität mit ABS.
+\end{description}
+%\section{Bibliografía}
+%Esta guía no habría sido posible sin el conocimiento libre generado por la comunidad RepRap. Para la elaboración de esta guía se han %utilizado imágenes y contenido extraidos de los siguientes sitios web.
+%\\\\
+%\url{http://www.gyrobot.co.uk/blog/how-to-3d-print-with-flexible-filaments}\\
+%\url{http://www.thingiverse.com/thing:1496895}\\
+%\url{http://www.thingiverse.com/thing:247024}\\
+%\url{http://www.thingiverse.com/thing:16319}\\
+%\url{http://www.thingiverse.com/thing:779011}\\
+%\url{http://www.thingiverse.com/thing:1102900}\\
+%\url{http://www.thingiverse.com/thing:147705}\\
+%\url{http://www.thingiverse.com/thing:222667}\\
+%\url{http://www.thingiverse.com/thing:512338}\\
+%\url{https://all3dp.com/common-3d-printing-problems-and-their-solutions/}\\
+%\url{https://www.simplify3d.com/support/}\\
+%\url{http://www.thingiverse.com/thing:508896}\\
+%\url{http://www.thingiverse.com/thing:1187344}
+\includepdf{PDF/DE_CONTRAPORTADA.pdf}
+\end{document}

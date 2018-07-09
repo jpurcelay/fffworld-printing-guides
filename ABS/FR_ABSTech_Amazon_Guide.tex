@@ -1,0 +1,417 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
+
+\usepackage{caption}
+\usepackage{subcaption}
+
+\renewcommand{\familydefault}{\sfdefault} % cambiamos la fuente a una sans
+
+\usepackage{float} % para que floten las imagenes o algo asi...
+\usepackage{wallpaper} %paquete para usar una imagen como encabezado!
+\usepackage{hyperref} %para usar hypervinculos 
+\usepackage[export]{adjustbox} %para usar marcos en imagenes
+\usepackage{eurosym} % para el euro
+\usepackage{transparent} %para las marcas de agua
+\usepackage{eso-pic}  %para las marcas de agua
+
+\definecolor{azul_marcos}{RGB}{0,128,159} %defino el color azul de los marcos
+\usepackage{sectsty} %esto es para cambiar el color de las fuentes creo
+\renewcommand{\familydefault}{\sfdefault} % cambiamos la fuente a una sans
+\sectionfont{\color{azul_marcos}}  % sets colour of sections
+\subsectionfont{\color{azul_marcos}}  % sets colour of sections
+
+
+\usepackage{pdfpages} %para insertar pdfs
+\usepackage{amssymb}
+\usepackage{pstcol} % para color
+\usepackage{pst-node} % para diagramas
+\usepackage{pst-plot} % para representacion de dat
+\usepackage[spanish]{babel}
+\addto\captionsspanish{\renewcommand\chaptername{Bloque}}
+%\usepackage[total={18cm,21cm},top=2cm, left=2cm]{geometry}
+\usepackage{anysize}
+\pagestyle{plain}
+%\markboth{left head}{right head}
+%\markright{Guide d’impression ABS Tech}
+\marginsize{3cm}{2cm}{2.5cm}{1cm}
+\title{Guide d’impression ABS Tech}
+\date{}
+
+%configuracion de la marca de agua
+\AddToShipoutPicture{
+    \put(0,0){
+        \parbox[b][\paperheight]{\paperwidth}{%
+            \vfill
+            \centering
+            {\transparent{0.1}\includegraphics[scale=1.25]{FOTOS/logofff}}%
+            \vfill
+        }
+    }
+}
+
+\begin{document}
+\ULCornerWallPaper{1}{FOTOS/header}
+\LLCornerWallPaper{1}{FOTOS/footer}
+%\maketitle
+%\tableofcontents
+\includepdf{PDF/PORTADA.pdf}
+\section{¿Qu’est-ce que la technologie ABS?}ABS Tech est un filament d’ impression en 3D  FFF/FDM acrylonitrile butadiène styrène (A.B.S.) spécialement traité avec des additifs pour réduire l’effet Warping (déformation) qui  caractérise ce matériel et aussi pour le rendre plus facile à utiliser.
+\section{¿Pourquoi devrait-on utiliser la Tech ABS ?}
+ABS Tech accroit les possibilités des filaments ABS traditionnels tout en conservant en même temps les propriétés chimiques et mécaniques de cette importante  thermoplastique.ABS Tech amplía las posibilidades de los filamentos de ABS tradicionales manteniendo a la vez las propiedades químicas y mecánicas de este fantástico termoplástico.
+\begin{itemize}
+\item Son traitement anti-déformation permet une impression plus  volumineuse que la norme et une meilleure utilisation dans les imprimantes domestiques.
+\item Les odeurs dégagées par notre Tech ABS sont moins gênantes que celles des autres filaments d’ABS Tech.
+\item ABS Tech est un matériel très dur et avec une bonne résistance chimique à l’abrasion.
+\item Il se dissout dans l’acétone. Cela permet de joindre étroitement les morceaux d’ABS à l’acétone en tant qu’une colle.
+\item Et enfin les parties imprimées en ABS Tech peuvent être facilement post-traitées, car ce matériel peut être foré, poncé, peint, etc...
+\end{itemize}
+\section{Données techniques et  paramètres d’impression}
+\begin{table}[H]
+\centering
+\caption*{Ficha técnica}
+\begin{tabular}{|
+>{\columncolor[HTML]{FFFFFF}}l |
+>{\columncolor[HTML]{FFFFFF}}c |}
+\hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Matière}}   & Acrilonitrilo Butadieno Estireno   \\ \hline
+\textbf{Couleurs disponibles}              & 22                 \\ \hline
+\textbf{Formats disponibles}             & 1kg, 250gr         \\ \hline
+\textbf{Température de déformation à la chaleur} & 88ºC               \\ \hline
+\textbf{Température de fusion}            & 200ºC              \\ \hline
+\textbf{Température de décomposition}    & \textgreater 260ºC \\ \hline
+\textbf{Densité}                         & 1.05 gr / cm3      \\ \hline
+\textbf{Résistance aux chocs}                         & 17 kg-cm / cm3      \\ \hline
+\textbf{Étirement maximal}              & 25\%              \\ \hline
+\end{tabular}
+\end{table}
+\begin{table}[H]
+\centering
+\begin{tabular}{|
+>{\columncolor[HTML]{FFFFFF}}l |
+>{\columncolor[HTML]{FFFFFF}}c |}
+\hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Température d'impression recommandé}} & 240º-245º              \\ \hline
+\textbf{L'impression de vitesse recommandée}                         & 50-90mm/s              \\ \hline
+\textbf{Température du lit chaud}                                  &  80º - 100º        \\ \hline
+\textbf{Ventilateur de couche}                                      & Désactivé ou réduit velocidad                 \\ \hline
+\textbf{Vitesse de première couche}                                                 & 20 mm/s                      \\ \hline
+\textbf{Hauteur de la première couche}                                           & \textgreater 0.2 mm                      \\ \hline
+\end{tabular}
+\end{table}
+
+Vous pouvez télécharger nos profils complets d’impression des principales programmes de stratification (Cure, Slic3r et Simplify3D) sur notre page web :
+\\\\
+\centerline{ {\huge \url{www.fffworld.com/documentation} } }
+\\\\
+Les paramètres optimaux dépendent de l’imprimante 3D que vous utilisez, certes ils sont des paramètres pratiques à avoir comme point de départ. Avec quelques tirages, vous serez en mesure de définir  le cadre et le réglage adéquat pour votre machine.
+\section{Problèmes et solutions}
+\subsection{La déformation et la fissuration (warping, cracking)}
+		\subsubsection{En quoi consistent -elles ?}L’ABS est le matériau idéal pour l’impression 3D en vue de leur disponibilité et leur caractéristiques : il est extrudé à une température légèrement supérieure à l’APL, il est moins exigeant sur le type de bout chaud utilisé et il est moins susceptible au bourrage, car il ne se cristallise pas lors de la dégradation et il possède des propriétés mécaniques supérieures.
+\\\\
+Son plus grand inconvénient est l’effet connu de déformation / et fissuration, mais avec des conseils adéquats, ces problèmes peuvent être surmontés.
+\\\\
+L’effet de Warping ( déformation) est le nom donné dans le monde de l’impression 3D pour les problèmes causés par le rétrécissement du plastique lors du refroidissement, ce qui provoque parfois la déformation ou la casse des pièces .
+\\\\
+La distinctions entre la déformation et la fissuration dépend du problème affectant la première couche ou les couches intermédiaires de la pièce.
+%EJEMPLO_WARPING
+%Leyenda: Ejemplo de problema de warping
+%EJEMPLO_CRACKING
+%Leyenda: Ejemplo de problema de cracking
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/EJEMPLO_WARPING}
+	\caption*{Exemple de déformation}
+    \end{subfigure}
+    \qquad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/EJEMPLO_CRACKING}
+	\caption*{Exemple de fissuratio}
+    \end{subfigure}   
+\end{figure}
+		\subsubsection{Quelles sont leurs causes ?}L’impression en 3D consiste au dépôt des fils de filament qui sont collés ensemble formant les pièces désirées.
+\\\\
+Lors du refroidissement, ces fils rétrécissent réduisant leurs longueur et provoquant des contraintes cumulatives et des effets indésirables sur les pièces .
+\\\\
+Les différentes phases de ce problème peuvent être constaté dans ces images :
+%CAUSA WARPING
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/CAUSA_WARPING_1}
+\end{figure}
+
+\begin{description}
+\item[1] la première couche est déposée à chaud : étant encore chaud sa taille est supérieure à ce que vous obtiendrez à la température ambiante.
+\item[2] la première couche refroidit: lors du refroidissement, elle réduit sa taille et les premières pressions apparaissent et qui ont tendance à détacher la partie de la surface d’impression.
+\item[3] la deuxième couche est déposée à chaud : quand elle est chaude, le volume de la deuxième couche est supérieur à la première.
+\item[4] la deuxième couche se refroidit: la tension générée par le rétrécissement de la deuxième couche s’ajoute à celle causée par la première couche et se détache tout en courbant.
+\end{description}
+			\paragraph{L’influence de la température dans la déformation}\mbox{}\\\\
+La différence de température est donc responsable du problème, en particulier la différence entre la température ambiante et la température de transition vitreuse du matériau.
+\\\\
+\url{https://en.wikipedia.org/wiki/Glass_transition}
+\\\\
+La température de transition vitreuse de l'ABS est d'environ 100º et la température ambiante habituellement autour de 30º, est ce saut de 70º qui provoque le problème.
+\\\\
+Par curiosité il est bon de savoir que l’APL avec la température se dilate plus que l’ABS, néanmoins sa transition vitreuse s’élève à 60 degrés et puisque la différence avec la température ambiante est beaucoup plus petite, il n'est pas affecté par la déformation.
+\\\\
+Par conséquent, en contrôlant la température ambiante, nous pouvons contrôler totalement la déformation, même si ce n'est pas toujours évident.
+		\subsubsection{Solutions physiques}
+			\paragraph{Amélioration de l’adhérence de la surface d’impression}\mbox{}\\\\
+L’effet de déformation peut être atténuée par amélioration de l’adhérence de la surface d’impression, mais ce n’est pas la meilleure solution car elle ne vise pas la racine du problème et n’apporte pas de solution à la fissuration.
+\\\\
+%CAUSA WARPING 2
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/CAUSA_WARPING_2}
+\end{figure}
+
+\begin{description}
+\item[1] la première couche est déposée à chaud : en étant encore chaude, sa taille est supérieure à ce que vous devrez obtenir en température ambiante.
+\item[2] la première couche refroidit: lors du refroidissement, la première couche a tendance à se rétrécir, cependant l’adhérence de la surface de contrebalancer cette force.
+\end{description}
+En appliquant un produit adhésif les tensions produites par le refroidissement de l’ABS ne sont pas supprimée, mais elles peuvent être neutralisées et c’est une solution efficace pour des petites pièces.
+\\\\
+Il est très important que la surface soit sans poussière,  graisse ou éléments étrangers qui affectent négativement l’adhérence.
+\\\\
+Il est également nécessaire que la surface d’impression est parfaitement de niveau afin que la première couche ait une altitude uniforme.
+\\\\
+Entre los productos más usados y con mejores resultados podemos encontrar:
+
+				\subparagraph{Ruban adhésif Kapton}\mbox{}\\\\
+Il s'agit d'un ruban adhésif polyamide enduit en silicone conçu pour résister à des températures élevées. L’ABS se colle très bien à ce type de ruban et c’est pour cette raison qu’il est largement utilisé dans l’impression 3D . Dans le but de bien l’utiliser, vous devez le coller soigneusement à la surface d'impression.
+%KAPTON1 KAPTON2
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/KAPTON1}
+	\caption*{Ruban adhésif Kapton}
+    \end{subfigure}
+    \qquad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/KAPTON2}
+	\caption*{Cristal avec Kapton}
+    \end{subfigure}   
+\end{figure}
+				\subparagraph{Laca}\mbox{}\\\\
+Le vernis s’est avéré un recours efficace pour augmenter l’adhérence de la surface d’impression. Il est recommandé de choisir un vernis contenant le moins possible d’ additifs. La manière d’utilisation consiste à le vaporiser abondamment sur la surface avant l’impression.
+%LACA
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.3\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/LACA}
+\caption*{Laca Nelly}
+\end{figure}
+				\subparagraph{La dissolution de l’ABS-acétone}\footnote{AVERTISSEMENT : Cette méthode s’avère aussi efficace au point que la pièce résultante ne peut être détachée de la base sans casser l’une des deux. } \mbox{}\\\\
+En profitant de la solubilité de l'ABS dans l'acétone, vous pouvez préparer une solution pour coller étroitement les pièces de la surface d'impression. Cela se fait en immergeant les pièces d'ABS dans l'acétone et en le laissant dissoudre le plastique. Une fois dissous, le liquide résultant peut s’appliquer sur la surface d’impression avec un pinceau afin d’accroître considérablement l’adhérence.
+				\subparagraph{Autres produits}\mbox{}\\\\
+Outre les méthodes mentionnées il y a des utilisateurs qui optent pour d’autres moyens pour atteindre les mêmes objectifs. D'autre part  le progrès de l’impression 3D à encouragé la création de produits spécifiques pour résoudre les problèmes d’adhésion ? Nous croyons que les méthodes mentionnées ci-dessus sont les procédures les plus accessible et efficaces, Cependant nous tenons à mentionner d’autres moyens puisqu’ ils peuvent être d’une grande aide :
+\begin{description}
+\item[Surfaces d’impression] Ruban de Masquage 3M, Buildtak
+\item[Produits adhésifs] Fixwarp3d, 3DLAC, Dimafix, bâton de colle UHU (PVA)
+\end{description}
+			\paragraph{L'utilisation du lit chauffant}\mbox{}\\\\
+L'utilisation d’une surface d’impression chauffante (lit chauffant) est nécessaire pour imprimer l’ABS d’une manière satisfaisante et il y a beaucoup d’imprimante qui en sont équipées.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/HEATEDBED}
+\caption*{Cama caliente para impresora RepRap}
+\end{figure}
+Le lit chaud veille à ce que les premières couches sont maintenues à une température suffisante afin d’éviter le rétrécissement du matériel et les problèmes de déformation.
+\\\\
+Le lit chaud doit être chauffé au moins à 80º même s’il est souhaitable qu’il atteint au moins 100 °.
+\\\\
+Il faut prendre en compte que le lit chaud n’arrive pas à maintenir la température des couches supérieures des grandes pièces  et par conséquent, la fissuration peut toujours se produire et surtout dans les pièces volumineuses.
+			\paragraph{Éviter les courants d’air}\mbox{}\\\\
+Afin d'éviter le refroidissement brusque de la pièce, il est plus approprié d’ imprimer dans des zones isolées des courants d’air. Cela entrera en conflit avec la recommandation de l’impression dans les zones aérées afin d’éviter l’accumulation de gaz nocifs.
+\\\\
+Par conséquent, la meilleure option est d'enfermer l’imprimante dans un boîtier capable de maintenir la température et d’éviter les courants d’air.
+% CERRAMIENTO1  CERRAMIENTO2  CERRAMIENTO3 
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/CERRAMIENTO1}
+    \end{subfigure}
+    \quad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/CERRAMIENTO2}
+    \end{subfigure}
+    \quad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+    %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/CERRAMIENTO3}
+    \end{subfigure}
+    \caption*{Exemples de boitier fait maison }
+\end{figure}
+Entretemps, il y a beaucoup d’imprimantes qui sont conçues sous forme boîte et ne nécessitent pas cette isolation supplémentaire.
+% IMPRESORACERRADA1	IMPRESORACERRADA2	IMPRESORACERRADA3
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/IMPRESORACERRADA1}
+    \end{subfigure}
+    \quad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/IMPRESORACERRADA2}
+    \end{subfigure}
+    \quad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+    %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/IMPRESORACERRADA3}
+    \end{subfigure}
+    \caption*{Les imprimantes 3d fermée}
+\end{figure}
+			\paragraph{Chauffage du boitier}\mbox{}\\\\
+Les imprimantes industrielles et professionnelles impriment l’ABS dans un boitier chauffant qui maintient la pièce à 80º durant toute l'impression. Cela nécessite un travail d’ingénierie supplémentaires pour refroidir le bout chaud et le reste des composants, mais cela élimine complètement les problèmes de déformation et de fissuration.
+\\\\
+% STRATASYS
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/STRATASYS}
+\caption*{Imprimante industrielle avec boitier chauffant}
+\end{figure}
+Bien que ce genre d’imprimantes ne sont pas disponibles pour l’usage domestique, nous allons les mentionner pour une meilleure compréhension du problème.
+		\subsubsection{Solutions des logicielles et conception}Outres toutes les techniques mentionnées ci-dessus ils existent aussi d’autres techniques de conception et de stratification qui permettent de réduire ou d’éliminer les problèmes de déformation.
+			\paragraph{Brim et raft (Bord et radeau)}\mbox{}\\\\
+Le bord et le radeau sont des options qui offrent des programmes de stratification pour augmenter l’adhérence des pièces à la base.
+%BRIM			RAFT 	
+% Leyenda: Brim	Leyenda: Raft
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/BRIM}
+    \end{subfigure}
+    \qquad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/RAFT}
+    \end{subfigure}   
+\end{figure}
+L'option Brim (bord)crée un périmètre supplémentaire autour de la pièce pour augmenter la surface et améliorer l'adhérence.
+\\\\
+En parallèle l’option raft (radeau) crée une sorte de lit de plusieurs couches d’épaisseur, puis elle imprime la pièce sur ce lit.
+\\\\
+Généralement, il est préférable d’utiliser le Brim car il est  plus rapide.
+\\\\
+Pour plus d’informations sur la façon d’activer et d’utiliser ces options dans votre programme, vous pouvez consulter ce qui suit :\\\\
+\url{http://manual.slic3r.org/expert-mode/skirt}\\\\
+\url{https://www.simplify3d.com/support/tutorials/rafts-skirts-and-brims/}\\\\
+\url{https://ultimaker.com/en/resources/16525-platform-adhesion}
+			\paragraph{L'impact du remplissage lors de la déformation}\mbox{}\\\\
+Le degré de déformation est directement proportionnel à la quantité de plastique rétractable, de ce fait, les pièces avec le taux du remplissage le moins élevé produiront  moins de déformation que celles avec un taux de remplissage plus élevé.
+\\\\
+La hauteur des premières couches aussi l’affecte et c’est préférable de la réduire.
+			\paragraph{La modification des pièces dans le but de réduire la déformation}
+				\subparagraph{L’ajout des supports autour des coins}\mbox{}\\\\
+Une méthode de contrôle de la déformation consiste à redessiner la pièce en renforçant les points où elle a été détachée du lit.
+\\\\
+Si, après un échec d’impression on constate qu’un ou plusieurs coins continuent de s’élever sans recours ,probablement il est nécessaires d’ajouter un support dans cette zone.
+\\\\
+Le support doit être plus grand ou plus petit selon la gravité du problème.
+%	MOUSEEAR1			MOUSEEAR2
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/MOUSEEAR1}
+    \end{subfigure}
+    \qquad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/MOUSEEAR2}
+    \end{subfigure}   
+\end{figure}	
+				\subparagraph{Éviter les coins arrondis}\mbox{}\\\\
+Il a été prouvé que la déformation affecte plus les coins arrondis et les pièces avec des bases circulaires ou des périmètres convexes.
+\\\\
+Si vous avez ce problème votre pièce peut bénéficier d’une nouvelle conception qui élimine ces problèmes de géométrie.
+			\paragraph{Abaissement de vitesse et de la hauteur de la première couche}\mbox{}\\\\
+Il est très important que la première couche reste le mieux possible adhérée à la surface d'impression.
+\\\\
+Pour y parvenir, il est conseillé de réduire considérablement la vitesse de la première couche de façon à favoriser que la matière colle de manière plus ferme et plus uniforme à la base. 
+\\\\
+Une vitesse de 20 mm/s dans la première couche devrait suffire pour atteindre cet objectif. Il est également conseillé de réduire la hauteur de la première couche, de telle sorte qu'elle ne dépasse pas 0,2 mm.
+			\paragraph{Utilisation du ventilateur de couche}\mbox{}\\\\
+Le ventilateur de la couche a pour but le refroidissement du  plastique après son extrusion et c’est précisément ce qu’il faut éviter lors de l’impression ABS. 
+\\\\
+Par conséquent, en règle générale, il est recommandé de le désactiver pendant l’impression ABS. 
+\\\\
+Cependant on peut l’utiliser sélectivement dans certaines étapes d’impression si votre logiciel de stratification le permet.
+	\subsection{Les vapeurs toxiques}ABS est connu pour émettre des vapeurs nocives lors de l’impression ce qui risque d’être potentiellement néfastes pour les humains. 
+\\\\
+Il est donc recommandé que l’imprimante soit placée est dans un endroit ventilé, ou du moins ne pas rester longtemps à côté d’elle pendant pendant le processus d’impression.
+\\\\
+Si vous utilisez intensivement l’ABS, il est plus judicieux d’installer un système de filtrage et d’extraction sur votre imprimante afin d’éviter carrément l’exposition à ces vapeurs.
+% VENTILACIONVAPORES
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/VENTILACIONVAPORES}
+\caption*{Ventilation des vapeurs}
+\end{figure}
+\section{Conseils d’impression : Le post-traitement de l’ABS}
+	\subsection{Ponçage, découpage et forage}Un des avantages de l’ABS est sa facilité au post-traitement. Les pièces de l’ABS peuvent être poncées avec un papier de verre classique pour faire disparaître les marques du processus d’impression ou pour faciliter son montage.
+\\\\
+TOn peut également le forer sans aucun problème et on peut le tailler en le coupant avec un cutter ou quelque chose de similaire.
+	\subsection{La peinture}L’ABS peut se peindre à l’aide de la peinture acrylique. Il est commode de poncer la surface de la pièce pour une meilleure adhérence de la peinture.
+	\subsection{L'acétone comme colle}Etant soluble, on peut l’utiliser pour joindre fortement les pièces d'ABS. En appliquant une petite quantité sur les surfaces de contact elles seront fusionnées les uns avec les autres en fournissant une liaison solide et durable.
+	\subsection{Acétone pour polir les pièces}L'acétone peut également être utilisée comme traitement de surface pour donner aux pièces d'ABS un aspect brillant et un poli parfait.
+% VAPORACETONA1			VAPORACETONA2
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/VAPORACETONA1}
+    \end{subfigure}
+    \qquad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/VAPORACETONA2}
+    \end{subfigure}   
+\end{figure}
+On peut l’appliquer à la main à l’aide d’un pinceau, mais c’est aussi possible de créer à la maison et facilement une chambre de vapeur d’acétone. les liens suivants décrivent deux méthodes différentes de baignade à vapeur d’acétone des pièces d'ABS:
+\\\\
+\url{http://www.instructables.com/id/Safe-way-to-do-Acetone-bath/}\\\\
+\url{http://sinkhacks.com/building-acetone-vapor-bath-smoothing-3d-printed-parts/}
+\section{Souhaitez-vous soutenir notre projet?}
+Tous les membres de FFF monde aiment impression 3D et la communauté de la machine. Nous nous estimons chanceux d’être en mesure de travailler sur des projets où nous pouvons vous livrer honnêtement notre passion. À l’avenir, nous aimerions être en mesure de développer plus de matériaux, plus de couleurs et plus de formats. En fin de compte, nous aimerions faire grandir notre entreprise.
+\\\\
+Par conséquent, une des meilleures actions pour nous aider, si vous le souhaitez et que vous êtes satisfait du filament, est de nous donner 5 étoiles sur Amazon.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,cfbox=azul_marcos 1pt 0pt]{FOTOS/AMAZON_FIVE_STARS}
+\caption*{Merci beaucoup!}
+\end{figure}
+\subsection{Autres filaments avec propriétés génial aujourd'hui disponibles dans Amazon}
+\begin{description}
+  \item[FlexiSMART Tech:] Conçu pour résister à l’abrasion et l’usure des impressions techniques.
+\item[ABS Tech:] Effet déformation réduit. Hautes performances sur les applications techniques.
+\item[PETG Tech:] Résistance mécanique maximale. Résistance au contact avec l’eau et les rayons UV. Aptitude pour usage alimentaire.
+\item[FilaMETAL:] PLA avec une charge métallique non abrasive qui donne une finition mécanique spectaculaire à vos impressions.
+\item[PC Tech:] Polycarbonates offrant une résistance élevée à la température et excellentes propriétés mécaniques.
+\item[Nylon Tech:] Imprimable à basse température. Résistance aux coups avec un certain degré de flexibilité.
+\item[PVA Tech:] Filament soluble dans l’eau destiné pour servir de matériau de support. Excellente compatibilité avec PLA.
+\item[HIPS Tech:] Filament soluble dans le Limonène destiné pour servir de matériau de support. Bonne résistance mécanique et excellente compatibilité avec l'ABS.
+\end{description}
+%\section{Bibliografía}
+%Esta guía no habría sido posible sin el conocimiento libre generado por la comunidad RepRap. Para la elaboración de esta guía se han %utilizado imágenes y contenido extraidos de los siguientes sitios web.
+%\\\\
+%\url{http://www.gyrobot.co.uk/blog/how-to-3d-print-with-flexible-filaments}\\
+%\url{http://www.thingiverse.com/thing:1496895}\\
+%\url{http://www.thingiverse.com/thing:247024}\\
+%\url{http://www.thingiverse.com/thing:16319}\\
+%\url{http://www.thingiverse.com/thing:779011}\\
+%\url{http://www.thingiverse.com/thing:1102900}\\
+%\url{http://www.thingiverse.com/thing:147705}\\
+%\url{http://www.thingiverse.com/thing:222667}\\
+%\url{http://www.thingiverse.com/thing:512338}\\
+%\url{https://all3dp.com/common-3d-printing-problems-and-their-solutions/}\\
+%\url{https://www.simplify3d.com/support/}\\
+%\url{http://www.thingiverse.com/thing:508896}\\
+%\url{http://www.thingiverse.com/thing:1187344}
+\includepdf{PDF/FR_CONTRAPORTADA.pdf}
+\end{document}

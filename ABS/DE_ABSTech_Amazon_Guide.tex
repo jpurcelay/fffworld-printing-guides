@@ -1,0 +1,416 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
+
+\DeclareUnicodeCharacter{00A0}{ } %este rollo es para evitar un error por la aparición de un caracter invisible e hijo de puta
+
+
+\usepackage{caption}
+\usepackage{subcaption}
+
+\renewcommand{\familydefault}{\sfdefault} % cambiamos la fuente a una sans
+
+\usepackage{float} % para que floten las imagenes o algo asi...
+\usepackage{wallpaper} %paquete para usar una imagen como encabezado!
+\usepackage{hyperref} %para usar hypervinculos 
+\usepackage[export]{adjustbox} %para usar marcos en imagenes
+\usepackage{eurosym} % para el euro
+\usepackage{transparent} %para las marcas de agua
+\usepackage{eso-pic}  %para las marcas de agua
+
+\definecolor{azul_marcos}{RGB}{0,128,159} %defino el color azul de los marcos
+\usepackage{sectsty} %esto es para cambiar el color de las fuentes creo
+\renewcommand{\familydefault}{\sfdefault} % cambiamos la fuente a una sans
+\sectionfont{\color{azul_marcos}}  % sets colour of sections
+\subsectionfont{\color{azul_marcos}}  % sets colour of sections
+
+
+\usepackage{pdfpages} %para insertar pdfs
+\usepackage{amssymb}
+\usepackage{pstcol} % para color
+\usepackage{pst-node} % para diagramas
+\usepackage{pst-plot} % para representacion de dat
+\usepackage[spanish]{babel}
+\addto\captionsspanish{\renewcommand\chaptername{Bloque}}
+%\usepackage[total={18cm,21cm},top=2cm, left=2cm]{geometry}
+\usepackage{anysize}
+\pagestyle{plain}
+%\markboth{left head}{right head}
+%\markright{Guía de impresión ABS Tech}
+\marginsize{3cm}{2cm}{2.5cm}{1cm}
+\title{ABS Tech printing guide}
+\date{}
+
+%configuracion de la marca de agua
+\AddToShipoutPicture{
+    \put(0,0){
+        \parbox[b][\paperheight]{\paperwidth}{%
+            \vfill
+            \centering
+            {\transparent{0.1}\includegraphics[scale=1.25]{FOTOS/logofff}}%
+            \vfill
+        }
+    }
+}
+
+\begin{document}
+\ULCornerWallPaper{1}{FOTOS/header}
+\LLCornerWallPaper{1}{FOTOS/footer}
+%\maketitle
+%\tableofcontents
+\includepdf{PDF/PORTADA.pdf}
+\section{Was ist ABS Tech? }ABS Tech ist ein Faden für den 3D-Druck von FFF/FDM von Acrylnitrilbutadienstyrol (A.B.S.), das speziell mit Zusätzen behandelt wurde, die die Krümmungswirkung reduzieren, welche für dieses Material charakteristisch ist und um es leichter verwendbar zu machen.
+\section{Warum sollten Sie ABS Tech benutzen?}
+ABS Tech erweitert die Möglichkeiten der traditionellen ABS-Filamente während des gleichzeitig die chemischen und mechanischen Eigenschaften dieses großartigen Thermoplasts erhält. 
+\begin{itemize}
+\item Seine Antikrümmungsbehandlung ermöglicht den Druck in größeren Volumina als der Standard und eine bessere Verwendung in den Haushaltsdruckern.
+\item Die Gerüche, welche von unserem ABS Tech produziert werden, sind weniger störend als jene von anderen ABS Tech-Filamenten. 
+\item ABS Tech ist ein sehr robustes Material und hat einen guten chemischen Abnutzungswiderstand.
+\item Es löst sich in Azeton auf. Dies ermöglicht die dichte Zusammenschweißung zweier Stücke ABS unter der Verwendung von Azeton als Klebstoff.
+\item Und zum Schluss können die gedruckten ABS Tech-Teile ganz einfach nachbearbeitet werden, da dieses Material gebohrt, geschmirgelt, bemalt, etc... werden kann. 
+\end{itemize}
+\section{Technische Daten und die Druckparameter}
+\begin{table}[H]
+\centering
+\caption*{Technische Daten}
+\begin{tabular}{|
+>{\columncolor[HTML]{FFFFFF}}l |
+>{\columncolor[HTML]{FFFFFF}}c |}
+\hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Material}}   & Acrylonitrile Butadiene Styrene   \\ \hline
+\textbf{Verfügbare Farben}              & 2                 \\ \hline
+\textbf{Verfügbare Formates}             & 1kg, 250gr         \\ \hline
+\textbf{Thermische Deflexionstemperatur} & 88ºC               \\ \hline
+\textbf{Fusionstemperatur}            & 200ºC              \\ \hline
+\textbf{Dekompositionstemperatur}    & \textgreater 260ºC \\ \hline
+\textbf{Dichte}                         & 1.05 gr / cm3      \\ \hline
+\textbf{Impact resistance}                         & 17 kg-cm / cm3      \\ \hline
+\textbf{Maximale Dehnbarkeit}              & 25\%              \\ \hline
+\end{tabular}
+\end{table}
+\begin{table}[H]
+\centering
+\begin{tabular}{|
+>{\columncolor[HTML]{FFFFFF}}l |
+>{\columncolor[HTML]{FFFFFF}}c |}
+\hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Empfohlene Drucktemperatur}} & 240º-245º              \\ \hline
+\textbf{Empfohlene Druckgeschwindigkeit}                         & 50-90mm/s              \\ \hline
+\textbf{Temperatur des heißen Bettes}                                  &  80º - 100º        \\ \hline
+\textbf{Schichtlüfter}                                      & Deaktivierte oder niedrige Geschwindigkeit                 \\ \hline
+\textbf{Geschwindigkeit der ersten Schicht}                                                 & 20 mm/s                      \\ \hline
+\textbf{Erste Schichthöhe}                                          & \textgreater 0.2 mm                      \\ \hline
+\end{tabular}
+\end{table}
+Sie können unsere vollständigen Druckprofile für die größten Druck- und Laminierungsprogramme (Cure, Slic3r und SImplify3D) von unserer Website herunterladen:
+\\\\
+\centerline{ {\huge \url{www.fffworld.com/documentation} } }
+\\\\
+Die optimalen Parameter hängen vom 3D-Drucker ab, den Sie benutzen, jedoch sind sie gute Parameter für einen Ansatzpunkt. Mit einigen Drucken werden Sie in der Lage sein die Grenzen und perfekte Einstellung für Ihre Maschine zu finden.
+\section{Probleme und Lösungen}
+	\subsection{Die Krümmung (warping) und das Zerbrechen (cracking)}
+		\subsubsection{Was ist damit gemeint?}Das ABS ist wegen der Verfügbarkeit und seiner Merkmale das ideale Material für den 3D-Druck: es wird bei einer Temperatur ausgestoßen, die etwas über dem PLA liegt, es ist weniger anspruchsvoll bezüglich des verwendeten Hot-End und ist dafür auch weniger anfällig zu verstopfen, da es bei seiner Degradierung nicht kristallisiert und überlegene, mechanische Eigenschaften besitzt.
+\\\\
+Sein größter Nachteil ist der bekannte Effekt des Verbiegens und Brechens, jedoch können diese Probleme mit den adäquaten Spitzen überwunden werden.
+\\\\
+Die Krümmungswirkung ist der in der Welt des 3D-Drucks gegebene Begriff für die Probleme, welche durch die plastische Kontraktion bei der Abkühlung verursachte werden, wodurch die Stücke manchmal deformieren oder brechen.
+\\\\
+Es wird zwischen Verbiegen und Brechen unterschieden, abhängig davon ob Problem die erste Schicht oder die Mittelschichten des Bauteils beeinflusst.
+%EJEMPLO_WARPING
+%Leyenda: Ejemplo de problema de warping
+%EJEMPLO_CRACKING
+%Leyenda: Ejemplo de problema de cracking
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/EJEMPLO_WARPING}
+	\caption*{Krümmungsbeispiel (warping)}
+    \end{subfigure}
+    \qquad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/EJEMPLO_CRACKING}
+	\caption*{Bruchbeispiel (cracking)}
+    \end{subfigure}   
+\end{figure}
+		\subsubsection{Was sind ihre Ursachen?}In 3D zu drucken bedeutet, Streifen des Filaments abzulegen, die zusammen geklebt werden und so das gewünschte Druckstück Schicht für Schicht konstruieren.
+\\\\
+Beim Abkühlen schrumpfen diese Streifen, reduzieren ihre Länge und verursachen kumulative Belastung auf die Stücke mit den unerwünschten Wirkungen.
+\\\\
+Die verschiedenen Phasen des Problems können in der Abbildung gesehen werden:
+%CAUSA WARPING
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/CAUSA_WARPING_1}
+\end{figure}
+
+\begin{description}
+\item[1] die erste Schicht wird heiß aufgetragen: Immer noch warm ist ihre Größe größer als, sie in bei Raumtemperatur wäre. 
+\item[2] die ersten Schicht kühlt ab: Beim Abkühlen verkleinert sie ihre Größe und die ersten Spannungen erscheinen, die dazu tendieren das Druckstück von der Druckoberfläche abzutrennen. 
+\item[3] die zweite Schicht wird heißt aufgetragen: wenn sie heiß ist, ist das Volumen der zweiten Schicht größer als das der ersten. 
+\item[4] die zweite Schicht kühlt ab: Die von der Kontraktion der zweiten Schicht generierte Spannung erhöht die der ersten Schicht und löst sich ab, während sie sich krümmt. 
+
+\end{description}
+			\paragraph{Der Einfluss von der Temperatur auf die Krümmung}\mbox{}\\\\
+Die Temperaturdifferenz ist auf diese Art für das Problem verantwortlich, besonders die Differenz zwischen der Raumtemperatur und der Glassprungtemperatur des Materials.
+\\\\
+\url{https://en.wikipedia.org/wiki/Glass_transition}
+\\\\
+Die Glassprungtemperatur von ABS ist etwa 100º und die Raumtemperatur normalerweise bei etwa 30º. Diese Differenz von 70º verursacht das Problem. 
+\\\\
+Interessanter Weise sollte man an dieser Stelle erklären, dass  das PLA sich mehr mit der Temperatur ausdehnt als das ABS , dennoch liegt seine Glassprungtemperatur bei 60 Grade und da die Differenz bei Raumtemperatur geringer ist, ist es nicht von der Krümmung beeinflusst. 
+\\\\
+Deshalb können wir durch Kontrollieren der Raumtemperatur die Krümmung vollständig kontrollieren, obwohl dies nicht immer leicht ist..
+		\subsubsection{Physische Lösungen}
+			\paragraph{Das Verbessern der Haftung der Druckoberfläche}\mbox{}\\\\
+Die Krümmungswirkung kann durch Verbessern der Haftung der Druckoberfläche abgeschwächt werden, jedoch ist dies nicht die beste Lösung, weil es die Wurzel vom Problem nicht angreift und nichts tun würde, um das Brechen zu verhindern.
+\\\\
+%CAUSA WARPING 2
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/CAUSA_WARPING_2}
+\end{figure}
+
+\begin{description}
+\item[1] die erste Schicht wird heiß aufgetragen: Dadurch, dass sie immer noch heiß ist, ist ihre Größe größer als sie es bei Raumtemperatur wäre. 
+\item[2] die ersten Schicht kühlt ab: Beim Abkühlen der ersten Schicht tendiert sie dazu zu schrumpfen, jedoch wirkt die Haftung der Oberfläche dieser Kraft entgegen.
+\end{description}
+Durch Anwenden eines Klebeprodukts wird die durch die Kühlung entstehende Spannung nicht vom ABS entfernt, aber es kann ihr entgegengewirkt werden und es dies eine wirksame Lösung für kleine Stücke. 
+\\\\
+Es ist sehr wichtig, dass die Oberfläche von Staub, Fett oder Fremdelementen, die die Haftung negativ beeinflussen, frei ist. 
+\\\\
+Es ist auch notwendig, dass die Druckoberfläche perfekt planiert wird, so dass die erste Schicht eine gleichförmige Höhe hat. 
+				\subparagraph{Kapton-Klebeband}\mbox{}\\\\
+Dies ist ein Klebeband mit silikonhaftendem Polyamid, hergestellt um hohen Temperaturen standzuhalten. Das ABS wird sehr gut auf diese Art Klebeband geklebt und ist breits beim 3D-Druck mit dieser Absicht verwendet worden. Um es richtig zu verwenden, müssen Sie es sorgfältig auf die Druckoberfläche kleben.
+%KAPTON1 KAPTON2
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/KAPTON1}
+	\caption*{Kapton-Klebeband}
+    \end{subfigure}
+    \qquad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/KAPTON2}
+	\caption*{Kristall mit Kapton}
+    \end{subfigure}   
+\end{figure}
+				\subparagraph{Der Lack}\mbox{}\\\\
+Der Lack hat sich als wirksamer Regress beim Steigern der Haftung der Druckoberfläche erwiesen.Es wird empfohlen einen Lack zu verwenden, welcher so wenig Additive wie nur möglich enthält. Er sollte vor dem Druck durch üppiges Sprühen auf die Oberfläche aufgetragen werden.
+%LACA
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.3\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/LACA}
+\caption*{Nelly power lacquer}
+\end{figure}
+				\subparagraph{Die Auflösung des ABS Azetons }\footnote{WARNUNG: Diese Methode kann so wirksam sein, dass das entstehende Druckteil nicht von der Basis abgetrennt werden kann, ohne eine der beiden zu zerbrechen.} \mbox{}\\\\
+Durch Ausnutzen der Löslichkeit von ABS in Azeton könnten Sie eine Lösung vorbereiten, die Stücke der Druckoberfläche festzukleben. Dies wird durch Eintauchen der ABS-Stücke in Azeton und dem auflösen des Plastiks getan. Sobald es sich aufgelöst hat, kann die entstehende Flüssigkeit mit einer Bürste auf der Druckoberfläche aufgetragen werden um die Haftung stark zu steigern.
+				\subparagraph{Andere Produkte}\mbox{}\\\\
+Zusätzlich zu den dort erwähnten Methoden gibt es Benutzer, die andere Methoden verwenden um dasselbe Ziel zu erreichen. Hat auf der anderen Seite die Förderung des 3D-Druck die Erscheinung von bestimmten Produkten ermutigt um die Haftungsprobleme zu lösen? Wir glauben, dass die oben genannten Methoden die günstigsten und wirksamsten Eingriffe sind, jedoch wollen wir einige andere erwähnen, da sie von großer Hilfe sein können: 
+\begin{description}
+\item[Druckoberflächen] 3M BlueTape, Buildtak
+\item[Klebstoffproduktes] Fixwarp3d, 3DLAC, Dimafix, UHU Glue Stick(PVA)
+\end{description}
+			\paragraph{Die Verwendung des Heizbetts}\mbox{}\\\\
+Eine beheizte Druckoberfläche (beheiztes Bett) zu verwenden ist nötig um ABS auf eine zufriedenstellende Art zu drucken und es gibt viele Drucker, die dies integrieren. 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/HEATEDBED}
+\caption*{RepRap printer heated bed}
+\end{figure}
+Das heiße Bett wird sicherstellen, dass die ersten Schichten bei einer Temperatur gehalten werden, die ausreichend ist um die materielle Schrumpfung und das Krümmungsproblem zu vermeiden.
+\\\\
+Das heiße Bett sollte geheizt bei mindestens 80 beheizt sein, obwohl es ratsam wäre es auf mindestens 100 zu halten
+\\\\
+Es sollte beachtet werden, dass das heiße Bett nicht die Temperatur der oberen Schichten hält, weshalb bei großen Stücken immer noch Brüche bei großen Volumina auftreten können.
+			\paragraph{Vermeiden Sie Luftströmungen}\mbox{}\\\\
+Um das zu verhindern, dass das Druckstück schlagartig abgekühlt werden kann, ist es sehr ratsam an einem Ort fern von Luftströmungen zu drucken. Dies tritt in Konflikt mit der Empfehlung in den belüfteten Bereichen zu drucken, um die Ansammlung von Schadgasen zu verhindern.
+\\\\
+Deshalb ist es die beste Option den Drucker in ein Gehäuse einzuschließen, das dazu fähig ist die Temperatur aufrechtzuerhalten und die Luftströmungen zu vermeiden.
+% CERRAMIENTO1  CERRAMIENTO2  CERRAMIENTO3 
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/CERRAMIENTO1}
+    \end{subfigure}
+    \quad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/CERRAMIENTO2}
+    \end{subfigure}
+    \quad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+    %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/CERRAMIENTO3}
+    \end{subfigure}
+    \caption*{Selbstgemachte Gehäusebeispiele}
+\end{figure}
+Inzwischen gibt es viele Drucker, die in der Form des Kastens designt sind und diese zusätzliche Isolierung nicht brauchen.
+% IMPRESORACERRADA1	IMPRESORACERRADA2	IMPRESORACERRADA3
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/IMPRESORACERRADA1}
+    \end{subfigure}
+    \quad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/IMPRESORACERRADA2}
+    \end{subfigure}
+    \quad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+    %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.3\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/IMPRESORACERRADA3}
+    \end{subfigure}
+    \caption*{Eingehüllter 3D-Drucker}
+\end{figure}
+			\paragraph{Das Erhitzen des Gehäuses}\mbox{}\\\\
+Die Industrie- und gewerbsmäßigen Drucker drucken ABS in einem geheizten Gehäuse, das den Druckteil während des ganzen Drucks bei 80º hält. Dies verlangt, dass zusätzliche Technik das heiße Ende und den Rest der Bestandteile abkühlt, aber sie entfernt auch die Probleme des Verbiegens und des Brechens vollständig.
+\\\\
+% STRATASYS
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/STRATASYS}
+\end{figure}
+Obwohl diese Art von Druckern nicht für den häuslichen Gebrauch verfügbar ist, erwähnen wir sie für ein besseres Verständnis des Problems.
+		\subsubsection{Software- und Designlösungen}Außer allen oben erwähnten die Oben genannten Techniken, gibt es auch andere Design- und Schichtungstechniken, die ermöglichen die Probleme des Krümmens reduzieren oder entfernen.
+			\paragraph{Rand und Floß (brim and raft)}\mbox{}\\\\
+Der Rand und das Floß sind Optionen, die Programme der Schichtung anbieten um die Haftung der Stücke auf die Basis zu steigern.
+%BRIM			RAFT 	
+% Leyenda: Brim	Leyenda: Raft
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/BRIM}
+    \end{subfigure}
+    \qquad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/RAFT}
+    \end{subfigure}   
+\end{figure}
+Die Randoption schafft eine zusätzliche Grenze um das Stück herum, um die Oberfläche zu steigern und die Haftung zu verbessern.
+\\\\
+Inzwischen schafft die Floßoption eine Art Bett mehrerer Schichten dick und druckt dann das Druckstück auf dieses Bett.
+\\\\
+Im Allgemeinen ist die Floßoption besser als einen Rand zu verwenden, weil sie schneller ist.
+\\\\
+Zwecks weiterer Informationen, wie man diese Optionen in Ihrem Programm aktivieren und benutzen kann, können Sie Folgendes ansehen:\\\\
+\url{http://manual.slic3r.org/expert-mode/skirt}\\\\
+\url{https://www.simplify3d.com/support/tutorials/rafts-skirts-and-brims/}\\\\
+\url{https://ultimaker.com/en/resources/16525-platform-adhesion}
+			\paragraph{Die Wirkung von Infill bei der Krümmung}\mbox{}\\\\
+Der Grad der Krümmung ist direkt proportional zur Stärke der plastischen Krümmung, die niedrigeren Prozentsätze des Infills produzieren auf diese Art weniger Krümmung als jene Stücke mit mehr Füllung.
+\\\\
+Die Höhe von der ersten Schicht wirkt sich ebenfalls aus und sollte besser reduziert bleiben.
+			\paragraph{Die Änderung von Teilen für reduzierte Krümmung}
+				\subparagraph{Fügen Sie die Unterstützungen um die Ecken herum hinzu}\mbox{}\\\\
+Eine Methode dafür, die Krümmung zu kontrollieren, ist das Stärken des Druckstücks an den Punkten, welche vom Bett abgetrennt sind.
+\\\\
+Wenn nachdem ein Druck fehlgeschlagen ist, wir sehen, dass sich eine oder mehrere Ecken immer noch heben ohne ein Mittel dagegen, könnte es notwendig sein eine Unterstützung in diesem Bereich hinzuzufügen.
+\\\\
+Die Unterstützung muss größer oder kleiner sein, je nach dem Schweregrad des Problems.
+%	MOUSEEAR1			MOUSEEAR2
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/MOUSEEAR1}
+    \end{subfigure}
+    \qquad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/MOUSEEAR2}
+    \end{subfigure}   
+\end{figure}	
+				\subparagraph{Vermeiden Sie die gerundeten Ecken}\mbox{}\\\\
+Es ist gezeigt worden, dass die Krümmung runde Ecken und kreisförmige Druckteile oder konvexe Perimeter stärker beeinflusst.
+\\\\
+Wenn Sie dieses Problem haben, kann Ihr Teil von einer Umgestaltung profitieren, die solche Geometrieprobleme entfernt.
+			\paragraph{Das Senken der Geschwindigkeit und der Höhe der ersten Schicht}\mbox{}\\\\
+Es ist sehr wichtig, dass die ersten Schichten so gut wie möglich an der Druckoberfläche haften. 
+\\\\
+Um dies zu erreichen, ist es ratsam die Geschwindigkeit der ersten Schicht bedeutend zu reduzieren, so dass das Material auf eine festere und gleichförmigere Weise an der Basis klebt.
+\\\\
+Eine Geschwindigkeit von 20 mm/s in der ersten Schicht sollte genügen, dieses Ziel zu erreichen. Es wird auch empfohlen die Höhe der ersten Schicht zu reduzieren, so dass sie nicht weiter als 0,2 mm hervorsteht.
+			\paragraph{Nutzung eines Schichtventilators}\mbox{}\\\\
+Der Schichtventilator ist dafür verantwortlich das Plastik nach seiner Extrusion abzukühlen und dies ist genau was beim Drucken von ABS vermieden werden sollte.
+\\\\
+Daher sollte er als generelle Empfehlung während des ABS-Drucks deaktiviert werden.
+\\\\
+Jedoch kann er selektiv in einigen Momenten des Drucks verwendet werden, wenn Ihre Laminierungssoftware dies erlaubt.
+	\subsection{Die toxischen Dämpfe}ABS ist dafür bekannt schädliche Dämpfe zu emittieren, wenn es gedruckt wird, welche für Menschen potentiell schädlich sein können.
+\\\\
+Daher wird empfohlen, dass der Drucker an einem ventilierten Ort steht oder Sie zumindest nicht längere Zeit während des Druckprozesses bei dem Drucker sind.
+\\\\
+Wenn Sie ABS intensiv verwenden, kann es interessant sein einen Filter- und Extraktionssystem in Ihrem Drucker zu installieren, um die Aussetzung dieser Dämpfe völlig zu vermeiden. 
+% VENTILACIONVAPORES
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/VENTILACIONVAPORES}
+\caption*{Belüftung der Dämpfe}
+\end{figure}
+\section{Hinweise zum Drucken: Die Nachbearbeitung von ABS }
+	\subsection{Das Schmirgeln, das Schneiden und das Bohren }Einer der Vorteile von ABS ist seine Leichtigkeit in der Nachbearbeitung. Die Stücke ABS können mit einem konventionellen Schmirgelpapier geschmirgelt werden um die Zeichen vom Druckverfahren zu entfernen oder seinen Zusammenbau zu erleichtern..
+\\\\
+Es kann auch ohne Probleme gebohrt werden und es kann durch Schneiden mit einem Cutter oder ähnlichem geformt werden.
+	\subsection{Die Farbe}Das ABS kann durch Verwenden von Acrylfarbe gestrichen werden. Es ist angenehm die Oberfläche des Werkstücks für ein besseres Haften der Farbe zu schmirgeln.
+	\subsection{Azeton als Kleber}Da ABS in Azeton löslich ist, kann es als Klebstoff verwendet werden um starke Stücke ABS zusammenzufügen. Durch Anwenden eines kleinen Betrags auf den Kontaktstellen werden sie mit einander durch starken und langen Druck dauerhaft vereint.
+	\subsection{Azeton zum Polieren des Stücks}Das Azeton kann auch als Oberflächenbehandlung verwendet werden um die Stücke ABS perfekt zu polieren und ihnen Glanz zu verleihen.
+% VAPORACETONA1			VAPORACETONA2
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/VAPORACETONA1}
+    \end{subfigure}
+    \qquad %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/VAPORACETONA2}
+    \end{subfigure}   
+\end{figure}
+Es kann von Hand mit Hilfe einer Bürste angewandt werden, aber es ist auch möglich relativ leicht eine Hausdampfkammer für das Azeton zu schaffen. In den folgenden Links werden zwei Methoden dafür beschrieben um mit Azetondampf die Stücke ABS zu waschen:
+\\\\
+\url{http://www.instructables.com/id/Safe-way-to-do-Acetone-bath/}\\\\
+\url{http://sinkhacks.com/building-acetone-vapor-bath-smoothing-3d-printed-parts/}
+\section{Würden Sie unser Projekt gerne unterstützen?}
+Alle Mitglieder von FFF World lieben den 3D-Druck und die Maker-Gemeinde. Wir sind glücklich in der Lage zu sein an Projekten zu arbeiten, bei denen wir unsere ehrliche Leidenschaft liefern können. In der Zukunft hoffen wir in der Lage zu sein mehr Materialien, mehr Farben und mehr Formate zu entwickeln.
+\\\\
+Daher ist es eine der besten Aktionen um uns zu helfen, sofern Sie es wollen und mit unserern Filamenten zufrieden sind, uns auf Amazon 5 Sterne zu geben.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,cfbox=azul_marcos 1pt 0pt]{FOTOS/AMAZON_FIVE_STARS}
+\caption*{Vielen Dank!}
+\end{figure}
+\subsection{Andere Materialien mit fantastischen Charakteristika auf Amazon}
+\begin{description}
+\item[FlexiSMART Tech:] Entwickelt, um die Abnutzung und den Verschleiß von technischen Drücken zu widerstehen.
+\item[ABS Tech:] Minimierter Warping-Effekt. Hohe Leistung bei technischen Anwendungen.
+\item[PETG Tech:] Maximale mechanische Beständigkeit. Beständig beim Kontakt mit Wasser und UV-Strahlen. Geegnet für die Nahrungsbenutzung.
+\item[FilaMETAL:] PLA mit nichtscheuernder, metallischer Ladung, die Ihren Skulpturen ein spektakuläres mechanisches Finish gibt.
+\item[PC Tech:] Polycarbonate mit einer hohen Temperaturbeständigkeit und hervorragenden metallischen Eigenschaften.
+\item[Nylon Tech:] Druckbar bei geringen Temperaturen. Widerstand gegen physische Krafteinwirkung mit einem gewissen Grad an Flexibilität.
+\item[PVA Tech:] Löslich in Wasser, Filament angegeben für die Verwendung als Trägermaterial. Ausgezeichnet mit PLA kompatibel.
+\item[HIPS Tech:] Löslich in Limonen Filament angegeben für die Verwendung als Trägermaterial. Gute mechanische Beständigkeit und eine ausgezeichnete Kompatibilität mit ABS.
+\end{description}
+%\section{Bibliografía}
+%Esta guía no habría sido posible sin el conocimiento libre generado por la comunidad RepRap. Para la elaboración de esta guía se han %utilizado imágenes y contenido extraidos de los siguientes sitios web.
+%\\\\
+%\url{http://www.gyrobot.co.uk/blog/how-to-3d-print-with-flexible-filaments}\\
+%\url{http://www.thingiverse.com/thing:1496895}\\
+%\url{http://www.thingiverse.com/thing:247024}\\
+%\url{http://www.thingiverse.com/thing:16319}\\
+%\url{http://www.thingiverse.com/thing:779011}\\
+%\url{http://www.thingiverse.com/thing:1102900}\\
+%\url{http://www.thingiverse.com/thing:147705}\\
+%\url{http://www.thingiverse.com/thing:222667}\\
+%\url{http://www.thingiverse.com/thing:512338}\\
+%\url{https://all3dp.com/common-3d-printing-problems-and-their-solutions/}\\
+%\url{https://www.simplify3d.com/support/}\\
+%\url{http://www.thingiverse.com/thing:508896}\\
+%\url{http://www.thingiverse.com/thing:1187344}
+\includepdf{PDF/DE_CONTRAPORTADA.pdf}
+\end{document}

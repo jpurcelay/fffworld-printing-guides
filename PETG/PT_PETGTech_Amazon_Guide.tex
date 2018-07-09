@@ -1,0 +1,360 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
+
+\usepackage{caption}
+\usepackage{subcaption}
+
+\renewcommand{\familydefault}{\sfdefault} % cambiamos la fuente a una sans
+
+\usepackage{float} % para que floten las imagenes o algo asi...
+\usepackage{wallpaper} %paquete para usar una imagen como encabezado!
+\usepackage{hyperref} %para usar hypervinculos 
+\usepackage[export]{adjustbox} %para usar marcos en imagenes
+\usepackage{eurosym} % para el euro
+\usepackage{transparent} %para las marcas de agua
+\usepackage{eso-pic}  %para las marcas de agua
+
+\definecolor{azul_marcos}{RGB}{0,128,159} %defino el color azul de los marcos
+\usepackage{sectsty} %esto es para cambiar el color de las fuentes creo
+\renewcommand{\familydefault}{\sfdefault} % cambiamos la fuente a una sans
+\sectionfont{\color{azul_marcos}}  % sets colour of sections
+\subsectionfont{\color{azul_marcos}}  % sets colour of sections
+
+
+\usepackage{pdfpages} %para insertar pdfs
+\usepackage{amssymb}
+\usepackage{pstcol} % para color
+\usepackage{pst-node} % para diagramas
+\usepackage{pst-plot} % para representacion de dat
+\usepackage[portuguese]{babel}
+\addto\captionsspanish{\renewcommand\chaptername{Bloque}}
+%\usepackage[total={18cm,21cm},top=2cm, left=2cm]{geometry}
+\usepackage{anysize}
+\pagestyle{plain}
+%\markboth{left head}{right head}
+%\markright{Guía de impresión ABS Tech}
+\marginsize{3cm}{2cm}{2.5cm}{1cm}
+\title{Guía do impressão PETG Tech}
+\date{}
+
+%configuracion de la marca de agua
+\AddToShipoutPicture{
+    \put(0,0){
+        \parbox[b][\paperheight]{\paperwidth}{%
+            \vfill
+            \centering
+            {\transparent{0.1}\includegraphics[scale=1.25]{FOTOS/logofff}}%
+            \vfill
+        }
+    }
+}
+
+\begin{document}
+\ULCornerWallPaper{1}{FOTOS/header}
+\LLCornerWallPaper{1}{FOTOS/footer}
+%\maketitle
+%\tableofcontents
+\includepdf{PDF/PORTADA.pdf}
+\section{﻿O que é o filamento PETG Tech?}O PETG Tech é um filamento para impressão 3D FFF/FDM de tereftalato de polietileno glicol (P.E.T.G.), concebido para combinar o melhor do PLA e do ABS, sendo um termoplástico resistente e fácil de imprimir.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,cfbox=azul_marcos 1pt 0pt]{FOTOS/PETGKILOAZUL}
+\end{figure}
+\section{Porquê usar filamento 3D PETG Tech?}
+O PETG Tech é um dos filamentos mais versáteis do mercado, já que combina as melhores propriedades de outros materiais.
+\begin{itemize}
+\item O PETG é muito resistente, quase tanto como o ABS, por isso pode ser utilizado para construir peças que vão estar sujeitas a esforço mecânico por tração, pressão ou impacto.
+\item O PETG também suporta melhor a temperatura que o PLA e tem uma boa resistência a químicos e solventes. Também resiste melhor à exposição aos raios UV do que o PLA e o ABS. PETG Tech é um material muito resistente, duro e com boa resistência química à abrasão.
+\item Por ser um material pouco higroscópico, conserva-se melhor e mais facilmente que o PLA.
+\item Além disso, o PETG apresenta muito menos “warping” (ou tendência a deformar-se ao arrefecer) que o ABS e, com os métodos adequados, pode ser completamente controlado. Portanto, contrariamente, o PETG permite a impressão de grandes volumes em impressoras domésticas.
+\item Embora o filamento de PETG não tenha certificação para estar em contacto com alimentos (FDA Food Safety) o material com o qual é fabricado já tem e isto faz com que seja mais indicado para um eventual contacto com alimentos do que o resto dos materiais. Mais adiante analisaremos este aspeto com mais detalhe.
+\item O PETG é um material reciclável e biodegradável, tal como o PLA.
+\item O PETG é naturalmente translúcido e brilhante. Embora também se venda em cores opacas, estas conservam um acabamento brilhante.
+\end{itemize}
+
+A seguir apresentamos uma tabela comparativa entre o PETG, o PLA e o ABS:
+\begin{table}[H]
+\centering
+\begin{tabular}{l|c|c|c|}
+\cline{2-4}
+                                                                                      & \cellcolor[HTML]{FFFFFF}PLA & \cellcolor[HTML]{FFFFFF}ABS & \cellcolor[HTML]{FFFFFF}PETG \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}Alta resistência ao impacto}          &                             & X                           & X                            \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}Baixo grau de deformação no arrefecimento (warping)} & X                           &                             & X                            \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}Absorvem pouca humidade}                    &                             & X                           & X                            \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}Biodegradável}                           & X                           &                             & X                            \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}FDA Food safety *}                       &                             &                             & X                            \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}Boa resistência UV}            &                             &                             & X                            \\ \hline
+\rowcolor[HTML]{FFFFFF} 
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}Inodoro quando impresso}                 & X                           &                             & X                            \\ \hline
+\end{tabular}
+\end{table}
+\section{Ficha técnica e parâmetros de impressão}
+\begin{table}[H]
+\centering
+\caption*{Ficha técnica}
+\begin{tabular}{|
+>{\columncolor[HTML]{FFFFFF}}l |
+>{\columncolor[HTML]{FFFFFF}}c |}
+\hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Material}}   & Tereftalato de polietileno glycol   \\ \hline
+\textbf{Cores disponiveis}              & 5 (3 translucidos, 2 opacos)                 \\ \hline
+\textbf{Formatos disponíveis}             & 1kg, 250gr         \\ \hline
+\textbf{Temperatura de deflexão térmica} & 70               \\ \hline
+\textbf{Temperatura de fusão}            & 200ºC              \\ \hline
+\textbf{Temperatura de decomposição}    & \textgreater 280ºC \\ \hline
+\textbf{Densidade}                         & 1.27 gr / cm3      \\ \hline
+\textbf{Resistência ao impacto}                         & 100 kg-cm / cm      \\ \hline
+\textbf{Alongamento máximo}              & 140\%              \\ \hline
+\end{tabular}
+\end{table}
+
+%TABLA PARAMETROS IMPRESION MEDIA
+
+\begin{table}[H]
+\centering
+\caption*{Parâmetros de impressão médios recomendados}
+\begin{tabular}{|
+>{\columncolor[HTML]{FFFFFF}}l |
+>{\columncolor[HTML]{FFFFFF}}c |}
+\hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Temperatura de impressão recomendada}} & 245º              \\ \hline
+\textbf{Velocidade de impressão recomendada}                         & 55 mm/s              \\ \hline
+\textbf{Camada óptima altura}                                  &  0.2 mm        \\ \hline
+\textbf{Temperatura do leito quentes}                                  &  70º - 85º        \\ \hline
+\textbf{Camada ventilador}                                  &  75\%        \\ \hline
+\textbf{Extrusion multiplier **}                                  &  85\% / 100\%        \\ \hline
+
+\textbf{Retratação ***}                                      & Normal ou aumentada                 \\ \hline
+\end{tabular}
+\end{table}
+
+%TABLA PARAMETROS RESISTENCIA
+
+\begin{table}[H]
+\centering
+\caption*{Parâmetros de impressão recomendados para máxima resistência e menor transparência *}
+\begin{tabular}{|
+>{\columncolor[HTML]{FFFFFF}}l |
+>{\columncolor[HTML]{FFFFFF}}c |}
+\hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Temperatura de impressão recomendada}} & 260º              \\ \hline
+\textbf{Velocidade de impressão recomendada}                         & 40 mm/s              \\ \hline
+\textbf{Camada óptima altura}                                  &  0.2 mm        \\ \hline
+\textbf{Temperatura do leito quentes}                                  &  70º - 85º        \\ \hline
+\textbf{Camada ventilador}                                  &  Off       \\ \hline
+\textbf{Extrusion multiplier **}                                  &  85\% / 100\%        \\ \hline
+
+\textbf{Retração ***}                                      & Normal ou aumentada                 \\ \hline
+\end{tabular}
+\end{table}
+
+%TABLA PARAMETROS TRANSPARENCIA
+
+\begin{table}[H]
+\centering
+\caption*{Parâmetros de impressão recomendados para máxima transparência * e menor resistência}
+\begin{tabular}{|
+>{\columncolor[HTML]{FFFFFF}}l |
+>{\columncolor[HTML]{FFFFFF}}c |}
+\hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Temperatura de impressão recomendada}} & 235º - 240º              \\ \hline
+\textbf{Velocidade de impressão recomendada}                         & 70 mm/s              \\ \hline
+\textbf{Camada óptima altura}                                  &  0.3 mm        \\ \hline
+\textbf{Número de perímetros}                                  &  1        \\ \hline
+\textbf{Infill}                                  &  0\%        \\ \hline
+\textbf{Temperatura do leito quentes}                                  &  70º - 85º        \\ \hline
+\textbf{Camada ventilador}                                  &  100\%        \\ \hline
+\textbf{Extrusion multiplier **}                                  &  85\% / 100\%        \\ \hline
+
+\textbf{Retração ***}                                      & Normal ou aumentada                 \\ \hline
+\end{tabular}
+\end{table}
+
+* Só se podem esperar acabamentos cristalinos em peças ocas com um só perímetro, idealmente objetos do tipo recipiente.\\\\
+** Em algumas impressoras pode ser necessário reduzir o multiplicador de extrusão. Se observar um excesso de material na peça impressa em forma de pequenas bolas de plástico ou notar que o nozzle choca com a peça durante a impressão, reduza o multiplicador de extrusão a 85\% e aumente-o progressivamente até encontrar o ponto no qual a extrusão seja a adequada.\\\\
+*** Se tem problemas de stringing, experimente aumentar a velocidade e a distância de retração.\\\\
+Pode descarregar os nossos perfis completos de impressão dos principais programas de laminação (Cura, Slic3r e Simplify3D) no nosso site:
+\\\\
+\centerline{ {\huge \url{www.fffworld.com/documentation} } }
+\\\\
+Os parâmetros ótimos dependerão da impressora 3D que você utilize, no entanto, são uns bons parâmetros para tomar como ponto de partida. Com umas poucas impressões será capaz de encontrar os limites e a configuração perfeita para a sua máquina.
+\section{PETG Tech: Caraterísticas e conselhos de impressão}
+	\subsection{A resistência do PETG}O PETG Tech pode ser utilizado para fabricar peças extraordinariamente resistentes.
+\\\\
+O PETG é ligeiramente flexível e isto permite-lhe absorver energia antes de se partir, mas o que realmente marca a diferença em relação a outros materiais é a consistência da união entre capas que este material proporciona.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,cfbox=azul_marcos 1pt 0pt]{FOTOS/PETG250NEGRO}
+\end{figure}
+A aderência das capas é tão firme que por vezes as peças têm maior resistência à tração entre capas que no eixo longitudinal à pista de filamento extrudido.
+\\\\A resistência entre capas pode aumentar-se elevando a temperatura ou diminuindo a velocidade. Isto permite que o material derretido se deposite mais quente e mais devagar. Contudo, o acabamento da peça será pior e a transparência reduzir-se-á como consequência de pistas de plástico ligeiramente deformadas pelo excesso de temperatura.
+\\\\O ventilador de capa joga aqui a favor da transparência e do acabamento e contra a resistência geral da peça. Embora os programas de laminado atuais permitam ativá-lo durante momentos concretos da impressão.
+\\\\Tenha em conta o que foi referido anteriormente no momento de laminar, dependendo do tipo de peça e do uso que lhe irá dar.
+	\subsection{A transparência do PETG}O PETG é um material translúcido, tal como o PET que se utiliza no fabrico de embalagens plásticas totalmente transparentes.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,cfbox=azul_marcos 1pt 0pt]{FOTOS/BOTELLASPET}
+\end{figure}
+No entanto, deve ter-se em conta que os processos de fabrico das referidas embalagens diferem enormemente dos utilizados na impressão 3D e, por isso, não é possível conseguir peças impressas em 3D completamente cristalinas, pelo menos usando a tecnologia FFF/FDM.
+\\\\
+Isto é provocado por irregularidades especulares que se criam no interior da peça como consequência do processo de deposição de capas de plástico.
+\\\\
+Além disso, ao acumular perímetros horizontais, o incremento da espessura das paredes das peças reduz a transparência.
+\\\\
+No entanto, se o seu objetivo é conseguir peças translúcidas, propomos-lhe alguns truques.
+\\\\
+Como norma geral, quanto maior é a temperatura ou mais baixa é a velocidade, menor é a transparência da peça impressa. Isto deve-se ao facto do plástico quente tender a escorrer, criando superfícies curvas que desviam a luz.
+\\\\
+Com velocidades mais altas e temperaturas mais baixas pode-se conseguir que as pistas de plástico fundido fiquem depositadas de forma mais regular, favorecendo a transparência da peça.
+\\\\
+Dependendo do eixo que necessite de um acabamento mais translúcido, também pode seguir os seguintes conselhos:
+		\subsubsection{Transparência no eixo Z (vertical)}A transparência da peça será função da altura da mesma e do infill utilizado.
+\\\\
+E também do número de capas, por isso recomenda-se utilizar uma altura de capa maior, para reduzir o número das mesmas.
+\\\\
+Há que diferenciar entre as capas que compõem a base da peça, e que se imprimem diretamente sobre a superfície de impressão, daquelas que servem de tampa ou fecho superior.
+\\\\
+Nas primeiras a transparência será boa, dado que o plástico fundido toma uma forma plana e regular ao ser depositado numa superfície plana.
+\\\\
+As superiores, no entanto, tendem a arquear, pois ficam apoiadas sobre os perímetros horizontais exteriores e a estrutura de enchimento.
+\\\\
+Por isso as capas inferiores têm melhor transparência do que as superiores.
+\\\\
+Para atenuar este problema pode aumentar a velocidade com a qual a impressora extrude as capas superiores, de forma que estas fiquem mais tensas e menos irregulares. Esta é uma opção avançada, que não está disponível em todos os programas de laminado.
+		\subsubsection{Transparência no plano XY (horizontal)}No plano XY a forma de aumentar a transparência é reduzir o número de perímetros.
+\\\\
+Todavia, se a peça tiver algum tipo de infill, este vai também reduzir a transparência, por isso só é possível conseguir peças com alta transparência em peças do tipo recipiente.
+\\\\
+Para este tipo de peças, os programas de laminado oferecem a opção de imprimir, aumentando a posição Z, de forma contínua, quando se quer imprimir com um só perímetro. Esta opção é conhecida como spiralize (Cura), ou vase mode (Slic3r e Simplify) e é a que recomendamos para a obtenção dos melhores resultados relativamente à transparência.
+\\\\
+Conforme já dissemos, quanto maior for a velocidade e menor a temperatura, melhor será a transparência, como consequência de uma disposição mais regular e tensa das pistas de plástico, por isso os testes deverão ser encaminhados por forma a encontrar a velocidade máxima e a temperatura mínima que permita imprimir peças sem que as capas se separem.
+\\\\
+Uma velocidade de 70 mm/s com uma temperatura de 240º e uma altura de capa de 0.25 mm deveria proporcionar uma boa transparência em peças impressas em modo vaso (vase mode), embora isto dependa da peça e da máquina.
+	\subsection{O filamento 3D PETG e a segurança alimentar (FDA Food Safety) dos objetos impressos em 3D}O PETG e o PET são plásticos muito semelhantes e sabe-se que este último se utiliza de maneira generalizada no fabrico de embalagens plásticas recipientes de alimentos. Por isso ambos têm uma certificação emitida pela FDA, que garante a salubridade dos alimentos que entrem em contacto com os referidos materiais.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,cfbox=azul_marcos 1pt 0pt]{FOTOS/PETGKILOROJO}
+\end{figure}
+Ainda assim, é preciso entender que a referida certificação se refere ao pellet (matéria-prima) a partir do qual se fabricam os filamentos de PETG e cuja certificação não pode transpor-se diretamente, por diferentes motivos que vamos analisar.
+\\\\
+Em primeiro lugar, os filamentos para impressão 3D contêm habitualmente aditivos para os dotar de caraterísticas que melhorem o seu rendimento ao serem utilizados. A inclusão de qualquer aditivo que não tenha certificação FDA Food Safety impede que esta se aplique.
+\\\\
+Por outro lado, a maioria dos filamentos são misturados com pigmentos para lhes conferir cor e, embora estes pigmentos possuam certificação ROHS, não contam com certificação FDA Food Safety.
+\\\\
+A primeira (ROHS) certifica a ausência de elementos manifestamente nocivos (como o chumbo ou o mercúrio), enquanto que a segunda certifica a absoluta inocuidade do objeto certificado, a ponto de que possa estar em contacto durante um longo período de tempo com alimentos destinados ao consumo. Portanto, a mera adição de pigmentos não certificados pela FDA Food Safety impede a sua consideração como tal.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,cfbox=azul_marcos 1pt 0pt]{FOTOS/NOZZLES}
+\caption*{Os nozzles podem conter chumbo}
+\end{figure}
+Mesmo no caso dos filamentos cujo material de base, aditivos e pigmentos tenham certificação FDA Food Safety, o processo de impressão numa máquina doméstica impede que o objeto resultante possa ser certificado. Isto como consequência dos metais com os quais se fabrica o nozzle (latão) e do extrusor que empurra o filamento.
+\\\\
+No seguimento do que foi referido anteriormente, não é possível criar objetos mediante impressão 3D FFF que cumpram com a norma FDA Food Safety
+\\\\
+Assim sendo, é necessário estabelecer a diferença entre segurança alimentar especial e geral.
+\\\\
+A primeira é concedida por organismos como a FDA, garante a salubridade e estão obrigadas a oferecer determinadas empresas nos seus produtos.
+\\\\
+A segunda, a segurança alimentar general, é a confiança que qualquer um pode ter, com base na sua razão e experiência, em que um determinado alimento não contém nenhum elemento manifestamente nocivo depois do seu manuseamento.
+\\\\
+Se bem que os objetos impressos em 3D não podem ter certificação FDA, é seguro supor que ninguém possa intoxicar-se por comer uma bolacha que tenha sido cortada com um molde de bolachas impresso em 3D ou utilizando um recipiente ou talher descartável impresso em 3D.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,cfbox=azul_marcos 1pt 0pt]{FOTOS/CORTADORGALLETAS}
+\end{figure}
+Portanto, devem ter-se em conta algumas coisas na hora de imprimir objetos que vão estar em contacto com alimentos:
+\\\\
+A impressão 3D FFF/FDM tende a deixar pequenos espaços e interstícios na superfície das peças que favorecem o desenvolvimento de bactérias e micro-organismos. Se a peça vier a ter apenas uma utilização, pode não ser um problema, mas se vai ser reutilizada considere a possibilidade de aplicar um recobrimento epóxi Food Safety, para selar a superfície da peça. 
+\\\\
+Aqueles organismos deveriam morrer ao utilizar uma máquina de lavar louça devido à elevada temperatura da água, mas essa temperatura pode deformar a peça.
+\\\\
+O tempo de contacto entre o alimento e a peça é importante; não é o mesmo para uma garrafa e um garfo ou para um cortador de bolachas.
+\section{Problemas e soluções ao imprimir filamento 3D PETG}
+	\subsection{Como aderir corretamente o PETG à superfície de impressão}O PETG tem menos warping que o ABS e pode ser controlado, embora seja necessário que a primeira capa fique perfeitamente aderida à superfície de impressão, para imprimir satisfatoriamente.
+\\\\
+O melhor método é utilizar uma cama quente a 75º e imprimir sobre o vidro aplicando laca standard.
+\\\\
+No caso de não dispor de cama quente, recomenda-se a utilização da opção brim do programa de laminado e baixar a velocidade da primeira capa, de forma que esta fique firmemente aderida à superfície de impressão.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,cfbox=azul_marcos 1pt 0pt]{FOTOS/BRIM}
+\end{figure}
+Observaram-se problemas ao imprimir filamento 3D PETG sobre cinta azul (3M blue tape) ou fita isoladora de papel, pelo que recomendamos utilizar o primeiro método descrito: laca, vidro e cama a 75º
+	\subsection{As estruturas de suporte em PETG}Já falámos da forte união entre as capas de PETG fundido, no entanto isto representa um desafio no momento de imprimir peças que façam uso intensivo de estruturas de suporte.
+\\\\
+Os suportes de PETG retiram-se com maior dificuldade e o acabamento da superfície em contacto direto com o suporte é áspero e irregular.
+\\\\
+Os programas de laminado mais avançados permitem configurar a distância horizontal e vertical entre a peça e os suportes, assim como o infill e a geometria da estrutura de suporte.
+\\\\
+Aconselha-se aumentar essas distâncias, reduzir o infill do suporte e optar por uma geometria simples de linhas se estiver a ter algum dos problemas mencionados ao utilizar estruturas de suporte nas suas peças.
+	\subsection{Problemas de stringing}A capacidade do PETG para aderir fortemente torna-o propenso a deixar restos em forma de fios nas peças impressas.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,cfbox=azul_marcos 1pt 0pt]{FOTOS/RETRACCION1}
+\caption*{Peça com problemas de stringing}
+\end{figure}
+Conforme já mencionámos anteriormente, este efeito pode reduzir-se fazendo uso da retração, mas é muito recomendável que, além das diferentes peças, se imprimam de maneira sequencial, em vez de simultânea.
+\\\\
+Com impressão sequencial referimo-nos a imprimir completamente uma peça antes de começar a imprimir a seguinte.
+\\\\
+Isto pode conseguir-se de 2 maneiras diferentes:
+\begin{itemize}
+\item A opção óbvia é imprimir só uma peça e, uma vez terminada, repetir a mesma impressão tantas vezes quantas se queira.
+\item A segunda alternativa, mais avançada e com algumas limitações, é utilizar a opção oferecida por alguns programas de laminado, de imprimir uma peça de cada vez. O tamanho máximo das peças que podem ser impressas usando este método vem dado pelas dimensões do nozzle e pela disposição dos eixos da impressora. Recomendamos encarecidamente que se informe acerca de como usar estas opções, para não correr o risco de danificar a sua impressora. Pode fazê-lo através dos seguintes links:
+\end{itemize}
+\url{https://www.simplify3d.com/support/tutorials/multi-part-printing/}\\
+\url{http://manual.slic3r.org/advanced/sequential-printing}\\
+\url{https://ultimaker.com/en/community/3843-force-cura-to-print-objects-separately}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/SEQUENTIALPRINTING}
+\caption*{Comparação das rotas de impressão entre impressão simultânea e sequencial}
+\end{figure}
+\section{Quer apoiar o nosso projeto?}
+Todos os membros FFF World adoram a impressão 3D e a comunidade maker. Sentimo-nos uns sortudos por poder trabalhar em projetos onde podemos pôr em prática a nossa paixão sincera. No futuro, gostaríamos de poder desenvolver mais materiais, mais cores, mais formatos. Definitivamente, gostaríamos de poder fazer crescer a nossa empresa.
+\\\\
+Para isso, uma das principais ações para nos ajudar, se quiser fazê-lo e estiver satisfeito com o filamento, é votar em nós no Amazon com 5 estrelas.
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,cfbox=azul_marcos 1pt 0pt]{FOTOS/AMAZON_FIVE_STARS}
+\caption*{¡Muchas gracias!}
+\end{figure}
+\subsection{Outros filamentos com excelentes propriedades agora disponíveis no Amazon}
+\begin{description}
+\item[FlexiSMART Tech:] Concebido para resistir à abrasão e ao desgaste de impressões técnicas.
+\item[ABS Tech:] Efeito warping minimizado. Alto rendimento em aplicações técnicas.
+\item[PETG Tech:] Máxima resistência mecânica. Resistente ao contacto com a água e os raios UV. Apto para uso alimentar.
+\item[FilaMETAL:] PLA com carga metálica não abrasiva que dá um acabamento metálico espetacular às suas impressões.
+\item[PC Tech:] Policarbonato com grande resistência à temperatura e com excelentes propriedades mecânicas.
+\item[Nylon Tech:] Imprimível a baixa temperatura. Resistência aos choques com um certo grau de flexibilidade.
+\item[PVA Tech:] Filamento solúvel em água indicado para ser utilizado como material de suporte. Excelente compatibilidade com PLA.
+\item[HIPS Tech:] Filamento solúvel em limoneno, indicado para ser utilizado como material de suporte. Boa resistência mecânica e excelente compatibilidade com ABS.
+\end{description}
+%\section{Bibliografía}
+%Esta guía no habría sido posible sin el conocimiento libre generado por la comunidad RepRap. Para la elaboración de esta guía se han %utilizado imágenes y contenido extraidos de los siguientes sitios web.
+%\\\\
+%\url{http://www.gyrobot.co.uk/blog/how-to-3d-print-with-flexible-filaments}\\
+%\url{http://www.thingiverse.com/thing:1496895}\\
+%\url{http://www.thingiverse.com/thing:247024}\\
+%\url{http://www.thingiverse.com/thing:16319}\\
+%\url{http://www.thingiverse.com/thing:779011}\\
+%\url{http://www.thingiverse.com/thing:1102900}\\
+%\url{http://www.thingiverse.com/thing:147705}\\
+%\url{http://www.thingiverse.com/thing:222667}\\
+%\url{http://www.thingiverse.com/thing:512338}\\
+%\url{https://all3dp.com/common-3d-printing-problems-and-their-solutions/}\\
+%\url{https://www.simplify3d.com/support/}\\
+%\url{http://www.thingiverse.com/thing:508896}\\
+%\url{http://www.thingiverse.com/thing:1187344}
+\includepdf{PDF/PT_CONTRAPORTADA.pdf}
+\end{document}
