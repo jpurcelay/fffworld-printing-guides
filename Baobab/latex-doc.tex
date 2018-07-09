@@ -66,8 +66,8 @@ Baobab permite crear objetos con apariencia de madera utilizando una impresora 3
 Es un filamento ideal para crear esculturas, apliques, elementos de carpintería, etc.. También puede utilizarse en tareas de restauración.\\\\
 Baobab es compatible con la mayoría de impresoras 3D FFF/FDM ya que no necesita cama caliente y se imprime a una temperatura similar al PLA.\\\\
 Al incorporar partículas de madera no fusibles la resistencia es inferior a la del PLA, pero es en general suficiente para la mayoría de aplicaciones típicas.\\\\
-Baobab no sufre de efecto warping y permite imprimir piezas de gran volumen sin temor a que sufran deformaciones al enfriarse.\section{Ficha técnica y parámetros de impresión}
-
+Baobab no sufre de efecto warping y permite imprimir piezas de gran volumen sin temor a que sufran deformaciones al enfriarse.
+\section{Ficha técnica y parámetros de impresión}
 \begin{table}[H]
 \centering
 \caption*{Ficha técnica}
@@ -75,14 +75,11 @@ Baobab no sufre de efecto warping y permite imprimir piezas de gran volumen sin 
 >{\columncolor[HTML]{FFFFFF}}l |
 >{\columncolor[HTML]{FFFFFF}}c |}
 \hline
-\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Material}}   & FlexiSMART (TPE)   \\ \hline
-\textbf{Colores disponibles}              & 11                 \\ \hline
-\textbf{Formatos disponibles}             & 1kg, 250gr         \\ \hline
-\textbf{Temperatura de deflexión térmica} & 90ºC               \\ \hline
-\textbf{Temperatura de fusión}            & 160ºC              \\ \hline
-\textbf{Temperatura de descomposición}    & \textgreater 240ºC \\ \hline
-\textbf{Densidad}                         & 0.96 gr / cm3      \\ \hline
-\textbf{Estiramiento máximo}              & 600\%              \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Material}}   & Baobab   \\ \hline
+	\textbf{Temperatura}                         & 200      \\ \hline
+	\textbf{Colores}                         & 16      \\ \hline
+	\textbf{Velocidad}                         & 50      \\ \hline
+
 \end{tabular}
 \end{table}
 \begin{table}[H]
@@ -92,13 +89,10 @@ Baobab no sufre de efecto warping y permite imprimir piezas de gran volumen sin 
 >{\columncolor[HTML]{FFFFFF}}l |
 >{\columncolor[HTML]{FFFFFF}}c |}
 \hline
-\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Temperatura recomendada de impresión}} & 195º-220º              \\ \hline
-\textbf{Velocidad recomendada de impresión}                         & 20-60mm/s              \\ \hline
-\textbf{Temperatura cama caliente}                                  & \textgreater 18º        \\ \hline
-\textbf{Altura de capa óptima}                                      & 0.2 mm                 \\ \hline
-\textbf{Perímetros}                                                 & 3                      \\ \hline
-\textbf{Top solid layers}                                           & 5                      \\ \hline
-\textbf{Retracción}                                                 & Desactivada o reducida \\ \hline
+\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{Material}} & Baobab              \\ \hline
+	\textbf{Temperatura}                         & 200      \\ \hline
+	\textbf{Colores}                         & 16      \\ \hline
+	\textbf{Velocidad}                         & 50      \\ \hline
 \end{tabular}
 \end{table}
 
@@ -107,6 +101,7 @@ Puedes descargarte nuestros perfiles completos de impresión de los principales 
 \centerline{ {\huge \url{www.fffworld.com/documentation} } }
 \\\\
 Los parámetros óptimos dependerán de la impresora 3D que utilices, sin embargo, son unos buenos parámetros para tenerlos como punto de partida. Con unas pocas impresiones serás capaz de encontrar los límites y la configuración perfecta para tu maquina.
+
 \section{Problemas y soluciones}
 	\subsection{Entendiendo el problema}
 Para conseguir un aspecto similar a la madera este filamento incorpora partículas de madera real. El tamaño y la cantidad de estas partículas está estudiado para evitar atascos pero aún así en algunas impresoras y bajo determinadas circunstancias los atascos pueden producirse y estropear la impresión.\\\\
@@ -141,9 +136,10 @@ Con el hot-end caliente, introduzca la aguja por el orificio del nozzle en difer
 Éste método bautizado por Ultimaker consiste en tratar de extraer los restos de filamento desde la parte superior del hot-end, utilizando otro trozo de filamento.\\\\
 Para ello se caliente el hot-end a la temperatura del último material usado y se introduce un trozo de filamento por la parte superior del hot-end hasta que salga por el nozzle o no podamos empujarlo más. El filamento introducido se fundirá y quedará pegado a los restos de material en el interior del hot-end. En ese momento, se baja la temperatura a 90º en el caso del Baobab o del PLA (o 110º si se trata de ABS) y se tira del filamento introducido con la intención de que al extraerlo se extraigan también los restos de material que producían el atasco.\\\\
 Cada vez que repitamos la operación el filamento extraído debería salir más limpio. Repetir el proceso hasta eliminar el atasco completamente.\\\\
-Puede leer más sobre el cold pulling en estos links: \url{https://www.antonmansson.com/how-to-cold-pull-clogged-nozzle/}
-\url{https://www.trideus.be/en/blogs/stories/tips-tricks-do-the-cold-pull/}
-\url{https://ultimaker.com/en/resources/19510-how-to-apply-atomic-method}
+Puede leer más sobre el cold pulling en estos links: \\\\
+\url{https://www.antonmansson.com/how-to-cold-pull-clogged-nozzle/}\\
+\url{https://www.trideus.be/en/blogs/stories/tips-tricks-do-the-cold-pull/}\\
+\url{https://ultimaker.com/en/resources/19510-how-to-apply-atomic-method}\\
 \url{https://printrbot.zendesk.com/hc/en-us/articles/202100554-Unclogging-the-Hot-End-Using-the-Cold-Pull-Method}
 	\subsubsection{Desmontando el nozzle}
 Si todo lo demás falla la solución pasa por desmontar el nozzle.\\\\
