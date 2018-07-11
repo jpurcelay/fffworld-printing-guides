@@ -1,3 +1,4 @@
+Guía de impresión Baobab
 ¿Qué es Baobab?
 Baobab es un filamento para impresión 3D FFF/FDM que incorpora partículas de madera para imprimir objetos que imitan a la madera.
 ¿Por qué usar Baobab?
@@ -9,7 +10,7 @@ Baobab no sufre de efecto warping y permite imprimir piezas de gran volumen sin 
 Problemas y soluciones
 Entendiendo el problema
 Para conseguir un aspecto similar a la madera este filamento incorpora partículas de madera real. El tamaño y la cantidad de estas partículas está estudiado para evitar atascos pero aún así en algunas impresoras y bajo determinadas circunstancias los atascos pueden producirse y estropear la impresión.
-Los atascos pueden surgir por dos causas diferenciadas. En caso de aparecer, es necesario identificar la causa para ponerle solución e imprimir satisfactoriamente.
+Los atascos pueden surgir por dos causas diferenciadas y en dos puntos diferentes del hot-end: el nozzle y el barrel. En caso de aparecer, es necesario identificar la causa para ponerle solución e imprimir satisfactoriamente.
 Atascos en el nozzle
 Los atascos en el nozzle se producen por acumulación de partículas de madera en la boquilla. La madera no se funde, como sí lo hace el plástico, y puede acumularse en el nozzle durante la impresión provocando un atasco.
 El tamaño del nozzle, la calidad del mismo, el material del que está hecho y la presencia de restos de otros materiales son determinantes en la aparición de atascos en el nozzle.
@@ -20,11 +21,11 @@ Estos atascos se producen por la expansión que sufre el filamento al calentarse
 Este rozamiento produce atascos y problemas de extrusión en algunos hot-ends, especialmente en aquellos con mala refrigeración, sin tubo de teflón en su interior o con un mecanizado de baja calidad.
 Controlando la retracción
 Los atascos en el barrel pueden controlarse modificando los parámetros de retracción. Los parámetros de retracción adecuados dependen de cada hot-end, pero la idea general es hacer retracciones largas y rápidas para evitar que el extremo del filamento permanezca en la zona más caliente del barrel cuando no está siendo extruido. De esta manera cuando el hot-end se desplaza entre 2 puntos sin extruir, la punta del filamento permanece en una zona fría, evitando la expansión.
-
-
-
-
-
+Le recomendamos que pruebe los siguientes rangos de retracción en caso de que tenga problemas de atascos:
+Velocidad de retracción:
+La máxima soportada por su impresora. Este valor puede estar entre 50 y 100 mm/s
+Distancia de retracción:
+Lo ideal es medir la distancia que hay entre el nozzle y la zona fría del hot-end. Esta distancia puede ser de entre 4 mm. y 20 mm. dependiendo del hot-end
 Aumentando la velocidad
 Otra estrategia que ayuda a evitar estos problemas es aumentar la velocidad de impresión, con el objetivo de dar menos tiempo al filamento a expandirse y atascar potencialmente en el barrel.
 La velocidad máxima depende de cada impresora pero una velocidad de 80 mm/s suele ser adecuada para reducir estos atascos.
@@ -44,7 +45,7 @@ Introducir un elemento metálico por la boquilla desde la parte inferior es el p
 FFF world tiene a disposición de sus clientes agujas metálicas flexibles que resultan idóneas para este cometido, pero cualquier elemento metálico, lo suficientemente resistente como para no partirse, puede servirnos. En caso de no disponer de una de estas agujas, puede utilizar una cerda metálica arrancada previamente de un cepillo.
 Con el hot-end caliente, introduzca la aguja por el orificio del nozzle en diferentes ángulos para eliminar los restos de filamento. Empuje manualmente el filamento desde la parte superior para comprobar si el atasco ha desaparecido. Repetir la operación hasta que el material fluya con normalidad.
 El método cold pulling o tirón en frío.
-Éste método bautizado por Ultimaker consiste en tratar de extraer los restos de filamento desde la parte superior del hot-end, utilizando otro trozo de filamento.
+Éste método bautizado consiste en tratar de extraer los restos de filamento desde la parte superior del hot-end, utilizando otro trozo de filamento.
 Para ello se caliente el hot-end a la temperatura del último material usado y se introduce un trozo de filamento por la parte superior del hot-end hasta que salga por el nozzle o no podamos empujarlo más. El filamento introducido se fundirá y quedará pegado a los restos de material en el interior del hot-end. En ese momento, se baja la temperatura a 90º en el caso del Baobab o del PLA (o 110º si se trata de ABS) y se tira del filamento introducido con la intención de que al extraerlo se extraigan también los restos de material que producían el atasco.
 Cada vez que repitamos la operación el filamento extraído debería salir más limpio. Repetir el proceso hasta eliminar el atasco completamente.
 Puede leer más sobre el cold pulling en estos links: 

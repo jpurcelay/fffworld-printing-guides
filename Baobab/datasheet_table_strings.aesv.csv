@@ -1,4 +1,6 @@
-Material~Baobab
-Temperatura~200
-Colores~16
-Velocidad~50
+Material~PLA con partículas de madera
+Densidad~0.93 g/cm3
+Temperatura de deflexión térmica~70ºc
+Temperatura de fusión~160ºc
+Temperatura de descomposicion~\textgreater 270º c
+Elongación máxima~40\%

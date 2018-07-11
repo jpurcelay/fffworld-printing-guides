@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper]{article}
+	\documentclass[11pt,a4paper]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -18,7 +18,6 @@
 \usepackage{eurosym} % para el euro
 \usepackage{transparent} %para las marcas de agua
 \usepackage{eso-pic}  %para las marcas de agua
-
 \definecolor{azul_marcos}{RGB}{0,128,159} %defino el color azul de los marcos
 \usepackage{sectsty} %esto es para cambiar el color de las fuentes creo
 \renewcommand{\familydefault}{\sfdefault} % cambiamos la fuente a una sans
@@ -39,7 +38,7 @@
 %\markboth{left head}{right head}
 %\markright{Guía de impresión FlexiSMART}
 \marginsize{3cm}{2cm}{2.5cm}{1cm}
-\title{Guía de impresión FlexiSMART}
+\title{<%=strings[0][0]%>}
 \date{}
 
 %configuracion de la marca de agua
@@ -61,11 +60,20 @@
 %\tableofcontents
 \includepdf{PDF/ES_PORTADA.pdf}
 \section{<%=strings[1][0]%>}<%=strings[2][0]%> 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/BAOBAB_3DBENCHY}
+\caption*{<%=captions_strings[0][0]%>}
+\end{figure}
 \section{<%=strings[3][0]%>}
 <%=strings[4][0]%>
 \\\\
 <%=strings[5][0]%>
-\\\\
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/SAMPLE_PARTS}
+	\caption*{<%=captions_strings[1][0]%>}
+\end{figure}
 <%=strings[6][0]%>
 \\\\
 <%=strings[7][0]%>
@@ -79,9 +87,18 @@
 <%=strings[11][0]%>
 \\\\
 <%=strings[12][0]%>
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/BARREL_AND_NOZZLE}
+\caption*{<%=captions_strings[2][0]%>}
+\end{figure}
 		\subsubsection{<%=strings[13][0]%>}
 <%=strings[14][0]%>
-\\\\
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/NOZZLE_CLOG}
+\caption*{<%=captions_strings[3][0]%>}
+\end{figure}
 <%=strings[15][0]%>
 \\\\
 <%=strings[16][0]%>
@@ -89,7 +106,11 @@
 <%=strings[17][0]%>
 		\subsubsection{<%=strings[18][0]%>}
 <%=strings[19][0]%>
-\\\\
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/EXPANSION}
+\caption*{<%=captions_strings[4][0]%>}
+\end{figure}
 <%=strings[20][0]%>
 %FOTO BARREL
 	\subsection{<%=strings[21][0]%>}
@@ -100,6 +121,11 @@
 		\item[<%=strings[24][0]%>] <%=strings[25][0]%> 
 		\item[<%=strings[26][0]%>] <%=strings[27][0]%> 
 	\end{description}
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.8\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/RETRACTION}
+\caption*{<%=captions_strings[5][0]%>}
+\end{figure}
 	\subsection{<%=strings[28][0]%>}
 <%=strings[29][0]%>
 \\\\
@@ -108,12 +134,37 @@
 <%=strings[32][0]%>
 \\\\
 <%=strings[33][0]%>
-\\\\
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/E3D_GOOD_COOLING}
+		\caption*{<%=captions_strings[6][0]%>}
+    \end{subfigure}
+    ~ \qquad%add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/MK8_BAD_COOLING}
+		\caption*{<%=captions_strings[7][0]%>}
+    \end{subfigure}
+\end{figure}
 <%=strings[34][0]%>
 \\\\
 <%=strings[35][0]%>
 \\\\
 <%=strings[36][0]%>
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/MK8_FAN_TRICK1}
+		\caption*{<%=captions_strings[8][0]%>}
+    \end{subfigure}
+    ~ \qquad%add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.4\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/MK8_FAN_TRICK2}
+		\caption*{<%=captions_strings[9][0]%>}
+    \end{subfigure}
+\end{figure}
 	\subsection{<%=strings[37][0]%>}
 <%=strings[38][0]%>
 \\\\
@@ -126,13 +177,34 @@
 <%=strings[43][0]%>
 \\\\
 <%=strings[44][0]%>
-\\\\
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.4\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/NEDDLE}
+\caption*{<%=captions_strings[10][0]%>}
+\end{figure}
 <%=strings[45][0]%>
+\begin{figure}[H]
+    \centering
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/CEPILLO1}
+    \end{subfigure}
+    ~ %add desired spacing between images, e. g. ~, \quad, \qquad, \hfill etc. 
+    \quad
+      %(or a blank line to force the subfigure onto a new line)
+    \begin{subfigure}[b]{0.45\textwidth}
+        \includegraphics[width=\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/CEPILLO2}
+    \end{subfigure}
+    \caption*{<%=captions_strings[11][0]%>}
+\end{figure}
 	\subsubsection{<%=strings[46][0]%>}
 <%=strings[47][0]%>
 \\\\
 <%=strings[48][0]%>
-\\\\
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.6\textwidth,cfbox=azul_marcos 4pt 0pt]{FOTOS/COLD_PULLING}
+\caption*{<%=captions_strings[12][0]%>}
+\end{figure}
 <%=strings[49][0]%>
 \\\\
 <%=strings[50][0]%>\\\\
@@ -148,25 +220,6 @@
 <%=strings[54][0]%>
 \\\\
 <%=strings[55][0]%>
-\section{¿Quieres apoyar nuestro proyecto?}
-Todos los miembros FFF World amamos la impresión 3D y la comunidad maker. Nos sentimos afortunados de poder trabajar en proyectos donde podamos entregar nuestra pasión sincera. En el futuro, nos gustaría poder desarrollar más materiales, más colores, más formatos. En definitiva, nos gustaría poder hacer crecer nuestra empresa.
-\\\\
-Para ello, una de las principales acciones para ayudarnos, si quieres hacerlo y estás satisfecho con el filamento, es la de votarnos en Amazon con 5 estrellas.
-\begin{figure}[H]
-\centering
-\includegraphics[width=0.5\textwidth,cfbox=azul_marcos 1pt 0pt]{FOTOS/AMAZON_FIVE_STARS}
-\caption*{¡Muchas gracias!}
-\end{figure}
-\subsection{Another filaments with outstanding properties available now in Amazon}
-\begin{description}
-\item[FlexiSMART Tech:] Diseñado para resistir a la abrasión y al desgaste de impresiones técnicas.
-\item[ABS Tech:] Efecto warping minimizado. Alto rendimiento en aplicaciones técnicas.
-\item[PETG Tech:] Máxima resistencia mécanica. Resistente al contacto con el agua y los rayos UV. Apto para uso alimentario.
-\item[FilaMETAL:] PLA con carga metálica no abrasiva que da un acabado metálico espectacular a tus impresiones.
-\item[PC Tech:] Policarbonato con gran resistencia a la temperatura y con excelentes propiedades mecánicas.
-\item[Nylon Tech:] Imprimible a baja temperatura. Resistencia a los golpes con cierto grado de flexibilidad.
-\item[PVA Tech:] Filamento soluble en agua indicado para uso como material de soporte. Excelente compatibilidad con PLA.
-\item[HIPS Tech:] Filamento soluble en limoneno indicado para uso como material de soporte. Buena resistencia mecánica y excelente compatibilidad con ABS.
-\end{description}
+<%= File.read("review_request_section.tex") %>
 \includepdf{PDF/ES_CONTRAPORTADA.pdf}
 \end{document}

@@ -1,7 +1,7 @@
-\section{Ficha técnica y parámetros de impresión}
+\section{<%=strings[0][0]%>}
 \begin{table}[H]
 \centering
-\caption*{Ficha técnica}
+\caption*{<%=strings[1][0]%>}
 \begin{tabular}{|
 >{\columncolor[HTML]{FFFFFF}}l |
 >{\columncolor[HTML]{FFFFFF}}c |}
@@ -11,26 +11,24 @@
 <%for row in datasheet%>
 	\textbf{<%=row[0]%>}                         & <%=row[1]%>      \\ \hline
 <%end%>
-
 \end{tabular}
 \end{table}
 \begin{table}[H]
 \centering
-\caption*{Parámetros de impresión recomendados usando un nozzle de 0.4 mm}
+\caption*{<%=strings[2][0]%>}
 \begin{tabular}{|
 >{\columncolor[HTML]{FFFFFF}}l |
 >{\columncolor[HTML]{FFFFFF}}c |}
 \hline
 <%first_row = printingtips.shift%>
-\multicolumn{1}{|c|}{\cellcolor[HTML]{FFFFFF}\textbf{<%=first_row[0]%>}} & <%=first_row[1]%>              \\ \hline
+\multicolumn{1}{|l|}{\cellcolor[HTML]{FFFFFF}\textbf{<%=first_row[0]%>}} & <%=first_row[1]%>              \\ \hline
 <%for row in printingtips%>
 	\textbf{<%=row[0]%>}                         & <%=row[1]%>      \\ \hline
 <%end%>
 \end{tabular}
 \end{table}
-
-Puedes descargarte nuestros perfiles completos de impresión de los principales programas de laminación (Cura, Slic3r y Simplify3D) desde nuestra página web:
+<%=strings[3][0]%>
 \\\\
 \centerline{ {\huge \url{www.fffworld.com/documentation} } }
 \\\\
-Los parámetros óptimos dependerán de la impresora 3D que utilices, sin embargo, son unos buenos parámetros para tenerlos como punto de partida. Con unas pocas impresiones serás capaz de encontrar los límites y la configuración perfecta para tu maquina.
+<%=strings[4][0]%>
