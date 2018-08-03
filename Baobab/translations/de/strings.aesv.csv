@@ -1,0 +1,77 @@
+Baobab Druckanleitung
+Was ist Baobab?
+Baobab ist ein Filament für den 3D-Druck FFF/FDM auf PLA-Basis, das Holzpartikel enthält, um holzähnliche Objekte zu bedrucken.
+Warum Baobab?
+Mit Baobab können Sie Objekte mit Holzoptik auf einem 3D-Drucker erstellen. Es ist ein geeignetes Material zum Bedrucken von Teilen, die aufgrund ihrer Beschaffenheit oder Bestimmung ein ähnliches Aussehen wie Holz haben könnten.
+Ein ideales Filament zur Herstellung von Skulpturen, Wandleuchten, Schreinerei-Elementen, etc. Es kann auch in der Restaurierung eingesetzt werden.
+Baobab ist mit den meisten 3D-FFF/FDM-Druckern kompatibel, da es kein Heißbett benötigt und bei einer Temperatur ähnlich PLA gedruckt wird.
+Durch den Einsatz von nicht schmelzbaren Holzpartikeln ist der Widerstand geringer als bei PLA, aber in der Regel für die meisten typischen Anwendungen ausreichend.
+Kein Verzugseffekt und ermöglicht das Bedrucken von großvolumigen Teilen ohne Angst vor Verformung beim Abkühlen.
+Probleme \& Lösungen
+Das Problem verstehen
+Um eine holzähnliche Optik zu erreichen, sind in diesem Filament Echtholzpartikel enthalten. Die Größe und Menge dieser Partikel vermeiden Staus, aber immer noch in einigen Druckern und unter bestimmten Umständen können Staus auftreten und den Druck verderben.
+Staus können durch zwei verschiedene Ursachen und an zwei verschiedenen Stellen des Hot-Ends entstehen: der Düse und dem Trommel. Im Falle einer Erscheinung ist es notwendig, die Ursache zu identifizieren, um sie zu lösen und zufriedenstellend zu drucken.
+Düsenstauungen
+Staus in der Düse werden durch die Ansammlung von Holzpartikeln in der Düse verursacht. Das Holz kann nicht wie der Kunststoff schmelzen und sich während des Druckens in der Düse ansammeln, was zu einem Stau führt.
+Die Größe, Qualität und das Material der Düse sowie das Vorhandensein von Resten anderer Materialien sind entscheidend für das Auftreten von Staus in der Düse.
+Bei Düsenstaus ist es am besten, eine Düse mit größerem Durchmesser zu verwenden. Mit einer 0,6 mm Düse verschwindet das Problem in den meisten Fällen.
+"""In unserem Online-Shop finden Sie die Düse, die am besten zu Ihrem Drucker passt. Außerdem bieten wir Ihnen beim Kauf von Baobab-Filamenten einen Rabatt auf den Kauf von Düsen an. \\\\\centerline{\url{https://www.fffworld.com/es/130-nozzles}}"" "
+Trommelstauungen
+Diese Staus entstehen durch die Ausdehnung der Wendel bei Erwärmung. Baobab-Filament hat aufgrund seines Holzgehalts eine raue Oberfläche und erzeugt eine höhere Reibung an den Innenwänden der Trommel oder der Wärmebrücke.
+Diese Reibung führt zu Staus und Extrusionsproblemen bei einigen heißen Enden, besonders bei denen mit schlechter Kühlung, ohne Teflonschläuche im Inneren oder mit einer minderwertigen Bearbeitung.
+Steuerung des Rückzugs
+Staus in der Trommel können durch Änderung der Rückzugsparameter kontrolliert werden. Die korrekten Rückzugsparameter hängen von jedem heißen Ende ab, aber die Hauptidee ist, lange und schnelle Rückzüge zu machen, um zu verhindern, dass das Ende des Fadens in der heißesten Zone des Trommeles bleibt, wenn es nicht extrudiert wird. Wenn sich das heiße Ende zwischen zwei Punkten bewegt, ohne zu extrudieren, bleibt die Wendelspitze in einer kalten Zone, wodurch eine Ausdehnung verhindert wird.
+Wir empfehlen, bei Stauproblemen folgende Möglichkeiten auszuprobieren:
+Rückzugsgeschwindigkeit:
+Das Maximum, das von Ihrem Drucker unterstützt wird. Dieser Wert kann zwischen 50 und 100 mm/s liegen.
+Rückzugsweg:
+Ideal ist es, den Abstand zwischen der Düse und der heißen Kaltzone zu messen. Dieser Abstand kann zwischen 4 und 20 mm betragen, je nach Heißende.
+Erhöhung der Geschwindigkeit
+Eine weitere Strategie, die hilft, diese Probleme zu vermeiden, ist die Erhöhung der Druckgeschwindigkeit, um dem Filament weniger Zeit zu geben, sich auszudehnen und das Trommel möglicherweise zu verklemmen.
+Die maximale Geschwindigkeit hängt von jedem Drucker ab, aber eine Geschwindigkeit von 80 mm/s ist gut.
+Verbesserung der Heißkühlung
+Die oben genannten Probleme werden durch die mangelhafte Kühlung des heißen Endes verursacht.
+Bei einer guten Kühlung, wie z.B. einer originalen E3D, die einen Kühlkörper und einen direkt darauf zielenden Lüfter enthält, sollten diese Staus nicht auftreten.
+Bei anderen Hot-Ends kann ein zusätzlicher Ventilator oder die Luftströmung zum Trommel geleitet werden, was die Ausdehnung des Fadens dämpft und die Staus lösen kann.
+In Seiten wie thingiverse finden Sie druckbares Zubehör für verschiedene Modelle von Hot-Ends und Druckern, die einen Lüfter unterstützen und die Kühlung verbessern.
+Andere effektive Lösungen sind die Verwendung von Flanschen oder die Änderung der Position des vorhandenen Ventilators, so dass der Luftstrom direkt auf den Zylinder des heißen Endes trifft. Diese Option kann ausreichen, um die Lösung schnell zu testen, bevor Sie ein Zubehör wie die oben genannten drucken und installieren.
+Mein Hot-End ist verstopft, was jetzt?
+Wenn ein Verstopfung auftritt, wird die Extrusion unterbrochen und wenn der Druck nicht gestoppt und das heiße Ende abgekühlt wird, kann es zu einer Verschlechterung des Materials im Inneren kommen.
+Dies geschieht, weil beim Anhalten zum Extrudieren des Fadens dieser bei Drucktemperatur im Inneren des heißen Endes bewegungslos bleibt. Durch zu langes Warmhalten kristallisieren und verkohlen die Kunststoffe und erschweren das Entfernen von Staus.
+Wir können wissen, ob sich verkohltes Material in der Düse befindet, wenn es nicht möglich ist, das Material mit mäßiger Kraft manuell zu extrudieren.
+Glücklicherweise lassen sich Baobab-Staus relativ einfach mit den richtigen Werkzeugen entfernen, auch wenn das Material abgebaut ist.
+Entstopfen des Düsenlochs
+Das Einsetzen eines metallischen Ãtems durch die Düse von unten ist der erste Schritt zur Beseitigung eines Staus.
+FFF world stellt seinen Kunden flexible Metallnadeln zur Verfügung, die für diese Aufgabe ideal sind. Aber jedes Metallteil, das stark genug ist, um nicht zu brechen, kann nützlich sein. Wenn Sie keine dieser Nadeln haben, können Sie eine Metallborste verwenden, die zuvor von einer Bürste entfernt wurde.
+Wenn das Hot-End erwärmt ist, führen Sie die Nadel in verschiedenen Winkeln durch das Loch der Düse, um die Reste des Fadens zu entfernen. Schieben Sie den Faden manuell von oben, um zu prüfen, ob der Stau verschwunden ist. Wiederholen Sie den Vorgang, bis das Material normal fließt.
+Kaltziehverfahren
+Diese Methode besteht darin, mit einem anderen Stück Filament die Reste des Filaments von der Oberseite des Hot-End zu extrahieren.
+ Erhitzen Sie das Hpt-End auf die Temperatur des zuletzt verwendeten Materials und führen Sie ein Stück Filament durch die Oberseite des Hot-End, bis es durch die Düse herauskommt, oder wir können es nicht weiter drücken. Der Faden schmilzt und klebt an den Materialresten im Inneren des Hot-End. Zu diesem Zeitpunkt wird die Temperatur auf 90Âº gesenkt, wenn sein Baobab oder PLA (oder 110Âº, wenn sein ABS) und das Filament innen gezogen wird, um es zu extrahieren, das restliche Material, das die Konfitüre produziert, wird auch extrahiert.
+Jedes Mal, wenn wir den Vorgang wiederholen, sollte das extrahierte Filament sauberer herauskommen. Wiederholen Sie den Vorgang, bis der Stau beseitigt ist.
+Mehr zum Thema Kaltziehen erfahren Sie in diesen Links:
+Demontage der Düse
+Wenn alles fehlschlägt, ist die Lösung die Demontage der Düse.
+Es ist notwendig, das Hot-End zu erwärmen und die Düse mit einem Schraubenschlüssel oder einer Rohrzange abzuschrauben. Nach der Demontage sollte es einfach sein, die Materialreste, die im Lauf verbleiben können, zu entfernen.
+Einmal vom heißen Ende getrennt, kann die Düse mit einer Heißluftpistole oder in einem Keramikkochfeld erhitzt werden, um Materialreste zu entfernen.
+Das Einführen der Düse in Aceton entfernt den Stau, wenn es sich um ABS handelt. Im Fall von Baobab oder PLA löst Aceton das Material nicht auf, kann aber helfen, die Düse zu reinigen.
+Verleihen Sie Ihren Stücken ein einzigartiges Finish.
+Verwenden Sie die Geschwindigkeit und die Temperatur, um die Oberfläche der gedruckten Teile zu verändern.
+Bei Filamenten mit Holzanteil wie Baobab besteht die Möglichkeit, das Aussehen der Schichten durch Änderung der Extrusionstemperatur zu verändern. Wenn mehr Wärme aufgetragen wird, erhalten die Schichten eine dunklere Farbe.
+Durch die Variation der Extrusionstemperatur durch den Druck erreichen wir, dass die Stücke eine unregelmäßige Färbung haben, die der von Naturholz ähnlicher ist, das keine homogene Farbe hat.
+Die Extrusionsgeschwindigkeit beeinflusst das Finish der Teile und kann während des Drucks variiert werden, um unregelmäßige Schichten zu erhalten, die an natürliches Holz erinnern.
+Diese Varianten lassen sich am besten mit den Möglichkeiten der aktuellen Laminatprogramme realisieren.
+Simplify3D weist verschiedenen Regionen des zu druckenden Modells unterschiedliche Parameter zu:
+https://www.simplify3d.com/support/articles/different-settings-for-different-regions-of-a-model/
+Es gibt auch ein Programm, das unabhängig oder als Plugin in Cura integriert werden kann, um die Aufgabe der Temperatur- und Geschwindigkeitsänderung beim Drucken zu erleichtern. Weitere Informationen dazu finden Sie unter den folgenden Links:
+https://www.thingiverse.com/thing:49276
+http://www.tridimake.com/2013/02/how-tun-run-python-cura-plugin-without.html
+https://www.tecrd.com/tools/stl_wood/
+Schleifen von Drucksachen mit Baobab.
+Obwohl PLA ein hartes Material ist und daher schwer zu schleifen ist, neigen PLA-Filamente, die Holz enthalten, dazu, besser auf den Schleifprozess zu reagieren.
+Das Schleifen macht die Oberfläche der Teile weicher und entfernt die Spuren der Schichten, aber als Gegenstück verlieren die Teile an Farbe und erhalten ein weißliches Aussehen.
+Um ein Teil zu schleifen, verwenden Sie eine Modellklinge, um Grate, Gewinde, Kontaktflächen mit Stützen und andere sichtbare Fehler zu entfernen. Danach wird mit Schleifpapier geschliffen, beginnend mit einer groben Körnung (nÂº 50) und weiter mit einem feinen Schleifpapier (nÂº 400).
+Nach dem Schleifen den Staub mit Druckluft oder Wasser von der Oberfläche des Werkstücks entfernen.
+Färben und lackieren Sie Ihre Teile.
+Um Ihren Teilen den letzten Schliff zu geben, können Sie sie färben und lackieren.
+Zum Färben verwenden Sie eine Holzlasur auf Wasserbasis. Auch können Sie die Stücke auf hausgemachte und billige Weise mit Kaffee färben. Es gibt noch andere professionelle Produkte, mit denen Sie einen sehr realistischen Eindruck von gealtertem Holz bekommen können.
+Sobald das Teil das gewünschte Aussehen hat und der Farbstoff trocken ist. Eine Schicht Holzlack, der die Farbe fixiert, den Glanz verleiht und die Lebensdauer des Stücks verlängert.

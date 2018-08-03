@@ -1,0 +1,77 @@
+Baobab printing Guide
+What is Baobab?
+Baobab is a filament for 3D printing FFF/FDM based on PLA which incorporates wood particles to print objects imitating wood.
+Why use Baobab?
+Baobab allows you to create objects with wood appearance by using a 3D printer. It is a suitable material for printing pieces that by their nature or destination could benefit from having a similar appearance to wood.
+An ideal filament to create sculptures, sconces, carpentry elements, etc. It can also be used in restoration.
+Baobab is compatible with most 3D FFF/FDM printers because it not requires a hot bed and is printed at a temperature similar to PLA.
+By incorporating non-fusible wood particles, the resistance is lower than PLA but it is generally enough for most typical applications.
+Not suffering warping effect and allows printing large volume pieces without fear of deformation when cooled.
+Problems \& Solutions
+Understanding the problem
+To achieve a look similar to wood, this filament incorporates real wood particles. The size and quantity of these particles avoid jams, but still in some printers and under certain circumstances jams can occur and spoil the printing.
+Jams can arise by two different causes and at two different points of the hot-end: the nozzle and the barrel. In case of apparition, its necessary to identify the cause in order to solve it and print satisfactorily.
+Noozle jams
+Jams in the nozzle are caused by the accumulation of wood particles in the nozzle. The wood can't melt like the plastic does and can accumulate in the nozzle during printing causing a jam.
+The size, quality, and the material of the noozle, and the presence of remains of other materials are decisive in the appearance of jams in the nozzle.
+If nozzle jams are occurring, the best solution is to use a larger diameter nozzle. Using a 0.6 mm nozzle the problem disappears in most cases.
+In our online store you can find the nozzle that best suits your printer. Besides if you buy Baobab filament, we offer a discount on the purchase of nozzles. \\\\\centerline{\url{https://www.fffworld.com/es/130-nozzles}}
+Barrel jams
+These jams happen because the expansion of the filament when heated. Having a rough surface due to its wood content, Baobab filament produces a greater friction on the inner walls of the barrel or thermal bridge.
+This friction produces jams and extrusion issues in some hot-ends, especially in those with poor cooling, without teflon tubing inside or with a low quality machining.
+Controlling the retraction
+Jams in the barrel can be controlled by modifying the retraction parameters. The proper retraction parameters depend on each hot-end but the main idea is to make long and fast retractions to prevent the end of the filament from remaining in the hottest zone of the barrel when it is not being extruded. In this way when the hot-end moves between 2 points without extrude, the filament tip remains in a cold zone, preventing expansion.
+We recommend, trying following retraction ranges in case you have jam problems:
+Retraction speed:
+The maximum supported by your printer. This value can be between 50 and 100 mm/s
+Retraction distance:
+The ideal is to measure the distance between the nozzle and the hot-end cold zone. This distance can be between 4 and 20 mm. depending on the hot-end.
+Increasing the speed
+Another strategy that helps avoid these problems is to increase the speed of printing in order to give less time to the filament to expand and potentially jam the barrel.
+The maximum speed depends on each printer but a speed of 80 mm/s is good to go.
+Improving the hot-end cooling
+The problems mentioned above are caused by the deficient cooling of the hot-end.
+Using a good cooling hot-end, such as an original E3D that incorporates a heatsink and a fan aiming directly at it, these jams should not occur.
+In other hot-ends, placing an extra fan or directing the air flow to the barrel, attenuates the expansion of the filament and can solve the jams.
+In pages like thingiverse can be found printable accessories for different models of hot-ends and printers that support a fan and improve cooling.
+Other effective solutions involve using flanges or modifying the position of the existing fan so that the air flow hits directly the barrel of the hot-end. This option may be adequate to test the solution quickly before venturing to print and install an accessory such as those mentioned above.
+My hot-end got clogged, now what?
+When a clog occurs, the extrusion is interrupted and if the printing is not stopped and the hot-end is cooled, degradation of the material inside can be produced to worse the situation.
+This happens because when stopping to extrude the filament it remains motionless inside the hot-end at printing temperature. By staying hot for too long, the plastics crystallize and carbonize making jams more difficult to remove.
+We can know if there is carbonized material inside the nozzle if its impossible to extrude manually the material applying a moderate force.
+Fortunately, Baobab jams are relatively easy to remove using the right tools, even when the material has degraded.
+Unclogging the nozzle hole
+Inserting a metallic ítem through the nozzle from the bottom is the first step to remove a jam.
+FFF world has available to its customers flexible metal needles that are ideal for this task. But any metal item, strong enough to not break can be useful. If you don't have one of these needles, you can use a metallic bristle previously removed from a brush.
+With the hot-end heated, insert the needle through the hole of the nozzle at different angles in order to remove the remains of the filament. Manually push the filament from the top to check if the jam has gone. Repeat the operation until the material flows normally.
+Cold-pulling method
+This method consists of trying to extract remains of filament from the top of the hot-end using another piece of filament.
+ Heat up the hot-end to the temperature of the last used material and insert a piece of filament through the top of the hot-end until it comes out through the nozzle or we can not push it further. The filament will melt and stick to the remains of material inside the hot-end. At that time, the temperature is lowered to 90º if its Baobab or PLA (or 110º if its ABS) and the filament inside is pulled in order to extracting it, the remaining material that produces the jam is also extracted too.
+Each time we repeat the operation the extracted filament should come out cleaner. Repeat the process until the jam is removed.
+You can read more about cold-pulling in these links:
+Unmounting the nozzle
+If everything fails, the solution is unmount the nozzle.
+Its necessary to heat the hot-end and unscrew the nozzle with a wrench or pipe wrench. Once disassembled, it should be easy to remove the remains of material that may stay in the barrel.
+Once separated from the hot-end, the nozzle can be heated with a hot air gun or in a ceramic hob in order to remove the remains of material.
+Introducing the nozzle in acetone will remove the jam if it is ABS. In Baobab or PLA case, acetone doesn't dissolve the material but could help to clean the nozzle.
+Like to give your pieces a unique finish
+Use the speed and temperature to modify the finish of the printed parts.
+In filaments with wood content such as Baobab, there is the possibility of varying the appearance of the layers by modifying the extrusion temperature. When applying more heat, the layers gain a darker color.
+By varying the extrusion temperature through the printing we will achieve that the pieces have an irregular coloration, more similar to natural wood that doesnt have a homogeneous color.
+The extrusion speed affects the finish of the pieces and can be varied during printing to obtain irregular layers that resemble natural wood.
+The best way to implement these variations is using the options available in the current laminate programs.
+Simplify3D assign different parameters to different regions of the model to be printed:
+https://www.simplify3d.com/support/articles/different-settings-for-different-regions-of-a-model/
+There is also a program that can be used independently or integrated into Cura as a plugin that can make easier the task of varying the temperature and speed during printing. More information on this, in the following links:
+https://www.thingiverse.com/thing:49276
+http://www.tridimake.com/2013/02/how-tun-run-python-cura-plugin-without.html
+https://www.tecrd.com/tools/stl_wood/
+Sanding printed pieces with Baobab.
+Although PLA is a hard material and therefore hard to sand PLA filaments that incorporate wood, tend to respond better to the sanding process.
+Sanding makes the surface of the pieces softer and removes the layers trace, but as a counterpart the pieces lose color and acquire a whitish appearance.
+To sand a piece, use a model blade to remove burrs, threads, contact surfaces with supports and other visible errors. Then proceed to sanding with sandpaper, starting with a coarse grain (nº 50) and continuing with a fine grain sandpaper (nº 400).
+After sanding, remove dust from the surface of the piece with compressed air or with water.
+Dye and varnish your pieces.
+To give your pieces the last finish you can dye and varnish them.
+For dye, use a water-based wood stain. Also you can dye the pieces in a homemade and cheap way using coffee. There are other professional products with which you can get a look of very realistic aged wood.
+Once the part has the desired appearance and the dye is dry. A layer of wood varnish, it will fix the colour, making shine and will make the piece last longer.

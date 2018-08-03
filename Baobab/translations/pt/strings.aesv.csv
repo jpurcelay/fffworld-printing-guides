@@ -1,0 +1,77 @@
+Guia de impressão Baobab
+O que é o Baobab?
+Baobab é um filamento para impressão 3D FFF/FDM baseado no PLA, que incorpora partículas de madeira para imprimir objetos que imitam a madeira.
+Porquê usar o Baobab?
+O Baobab permite criar objetos com a aparência de madeira usando uma impressora 3D. É um material adequado para impressão de peças que, pela sua natureza ou propósito, beneficiam de uma aparência semelhante à da madeira.
+É um filamento ideal para a criação de esculturas, apliques, elementos de carpintaria, etc... Também pode ser usado em obras de restauro.
+O Baobab é compatível com a maioria das impressoras 3D FFF/FDM, já que não precisa de cama quente e é impresso a uma temperatura semelhante à do PLA.
+Ao incorporar partículas de madeira não fundíveis, a resistência é inferior à do PLA, mas geralmente é suficiente para a maioria das aplicações típicas.
+O Baobab não sofre efeito de deformação e permite que você imprima peças de grande volume, sem receio de sofrerem deformação quando arrefecem.
+Problemas e soluções
+Compreendendo o problema
+Para conseguir uma aparência semelhante à madeira, este filamento incorpora partículas de madeira real. O tamanho e a quantidade destas partículas é estudada para evitar encravamentos, mas mesmo assim, em algumas impressoras e sob certas circunstâncias, podem ocorrer encravamentos e danos na impressão.
+Os encravamentos podem ocorrer por duas causas distintas e em dois pontos diferentes do hot-end: no nozzle e no barril. Se tal acontecer, é necessário identificar a causa para obter a solução e imprimir com êxito.
+Encravamentos no nozzle 
+O encravamentos no nozzle são produzidos pela acumulação de partículas de madeira no bocal. A madeira não derrete, ao contrário do plástico, e pode acumular-se no nozzle durante a impressão, provocando um encravamento.
+O tamanho do nozzle, a sua qualidade, o material com o qual é feito e a presença de vestígios de outros materiais são determinantes na ocorrência de encravamentos no nozzle.
+Se ocorrerem encravamentos no nozzle, a melhor solução é usar um nozzle de diâmetro superior. Usando um nozzle de 0,6 mm, o problema desaparece na maioria dos casos.
+Na nossa loja você pode encontrar o nozzle que melhor se adapta à sua impressora. Além disso, se você comprar filamento Baobab, oferecemos-lhe um desconto na compra de nozzles.\\\centerline{\url {https://www.fffworld.com/es/130-nozzles}}!
+Encravamentos no barril
+Estes encravamentos produzem-se devido à expansão do filamento ao aquecer. Tendo uma superfície rugosa, devido ao seu teor de madeira, o filamento Baobab produz uma maior fricção nas paredes internas do barril ou ponte térmica.
+Este atrito provoca encravamentos e problemas de extrusão em alguns hot-ends, especialmente naqueles com refrigeração pobre, sem tubo de teflon no interior ou com uma baixa qualidade de mecanização.
+Controlando a retração
+Os encravamentos no barril podem ser controlados modificando os parâmetros de retração. Os parâmetros de retração adequados dependem de cada hot-end, mas a ideia geral é fazer retrações grandes e rápidas, para evitar a extremidade do filamento permaneça na zona mais quente do barril quando não está a ser extrudido. Dessa forma, quando o hot-end se move entre 2 pontos sem extrudir, a ponta do filamento permanece numa zona fria, evitando a expansão.
+Recomendamos que teste as seguintes gamas de retração quando tiver problemas de encravamento:
+Velocidade de retração:
+A máxima suportada pela sua impressora. Este valor pode estar entre 50 e 100 mm/s
+Distância de retração:
+O ideal é medir a distância entre o nozzle e a zona fria do hot-end. Esta distância pode ser de 4 a 20 mm. Dependendo do hot-end.
+Aumentando a velocidade
+Outra estratégia que ajuda a evitar estes problemas é aumentar a velocidade de impressão, a fim de dar menos tempo ao filamento ao expandir-se e encravar potencialmente o barril.
+A velocidade máxima depende de cada impressora mas uma velocidade de 80 mm/s costuma ser adequada para reduzir estes encravamentos.
+Melhorar a refrigeração do hot-end
+Os problemas mencionados têm a sua origem numa refrigeração pobre do hot-end. 
+Usando um  hot-end com uma boa refrigeração, como por exemplo um E3D original, que incorpora um dissipador de calor e um ventilador, apontando diretamente para o mesmo, esses encravamentos não devem ocorrer.
+Noutros hot-ends, coloque um ventilador extra ou dirigir o fluxo de ar para o barril, atenuando a expansão do filamento, podendo assim resolver totalmente o problema dos encravamentos.
+Em páginas como a thingiverse podem encontrar-se acessórios para impressão para diferentes modelos de hot-ends e impressoras, permitindo acoplar uma ventoinha e melhorar a refrigeração.
+Outras soluções menos elegantes mas eficazes passam por utilizar flanges ou modificar a posição do ventilador existente, para que o fluxo de ar incida diretamente sobre o barril do hot-end. Esta opção pode ser apropriada para testar a solução de uma forma rápida, antes de se aventurar na impressão e instalar um dos acessórios mencionados acima.
+Ocorreu um encravamento, e agora?
+Quando ocorre um encravamento, a extrusão é interrompida e, se a impressão não parar e o hot-end arrefecer, o material no seu interior pode degradar-se, piorando a situação.
+Isso acontece porque, ao cessar a extrusão, o filamento imobiliza-se dentro do hot-end à temperatura da impressão. Permanecendo quentes durante um período demasiado longo, os plásticos cristalizam-se e queimam-se, fazendo com que o encravamento seja mais difícil de eliminar.
+Sabemos se há material queimado no interior do nozzle se não for possível extrudir manualmente o material, aplicando uma força moderada.
+Felizmente, os encravamentos de Baobab, mesmo quando o material se degradou, são relativamente fáceis de remover, usando as ferramentas apropriadas.
+Desencravar o orifício do nozzle
+Inserir um elemento metálico no bocal a partir da parte inferior é o primeiro passo para eliminar um encravamento.
+A FFF World tem à disposição dos seus clientes agulhas metálicas flexíveis ideais para essa finalidade, mas qualquer elemento metálico suficientemente resistente (para não partir) pode servir. No caso de não dispor de uma destas agulhas, pode usar um filamento metálico arrancado de uma escova.
+Com o hot-end quente, introduza a agulha no orifício do nozzle em diferentes ângulos para remover os restos de filamento. Empurre manualmente o filamento a partir de cima para verificar se o encravamento está resolvido. Repita a operação até que o material flua normalmente.
+O método cold-pulling ou puxar a frio.
+Este método consiste em tentar extrair os restos do filamento pela parte superior do hot-end, usando um outro pedaço de filamento.
+Para tal, aquece-se o hot-end à temperatura do último material usado e insere-se um pedaço de filamento pela parte superior do hot-end, até sair pelo nozzle ou não conseguirmos empurrá-lo mais. O filamento inserido irá fundir-se e aderir aos restos de material existentes no interior do hot-end. Nesse momento, a temperatura é reduzida para 90 Cº no caso do Baobab ou do PLA (ou para 110 Cº se for ABS) e puxa-se o filamento introduzido com a intenção de que, ao extrai-lo, se retirem também os restos de material resultantes do encravamento.
+À medida que repetimos a operação, o filamento extraído deverá sair mais limpo. Repetir o processo até que remover completamente o encravamento.
+Pode ler mais sobre o cold-pulling nestes links: 
+Desmontar o nozzle
+Se nada resultar, a solução passa por desmontar o nozzle.
+Para isso, é necessário aquecer o hot-end e desapertar o nozzle com uma chave inglesa ou com uma chave de boca. Depois de desmontado, deverá ser fácil eliminar os restos de material que possam estar no barril.
+Depois de separado do hot-end, o nozzle pode ser aquecido com uma pistola de ar quente ou numa placa vitrocerâmica para remover completamente os vestígios de material
+Insira o nozzle em acetona para eliminar totalmente o encravamento, se se tratar de ABS. No caso do Baobab ou do PLA, a acetona não dissolve o material, mas também ajuda a limpar o nozzle.
+Como dar um acabamento único às suas peças 
+Use a velocidade e a temperatura para modificar o acabamento das peças.
+Nos filamentos com conteúdo de madeira, como o Baobab, há a possibilidade de variar a aparência das camadas, modificando a temperatura de extrusão. Ao aplicar mais calor, as camadas adquirem uma cor mais escura.
+Variando a temperatura de extrusão ao longo da impressão, conseguiremos que as peças tenham uma coloração irregular mais parecida com a da madeira natural, que não tem uma cor homogénea.
+A velocidade de extrusão também afeta o acabamento das peças e pode variar durante a impressão, para obter camadas irregulares que se assemelham mais com a madeira natural.
+A melhor maneira de implementar essas variações é utilizar as opções disponíveis nos atuais programas de laminagem.
+O Simplify3D permite que você atribua diferentes parâmetros a diferentes regiões do modelo a imprimir:
+https://www.simplify3d.com/support/articles/different-settings-for-different-regions-of-a-model/
+Também há um programa que pode ser usado de forma independente ou integrado no Cura como plugin, facilitando a tarefa de variar a temperatura e a velocidade durante a impressão. Pode encontrar mais informações a este respeito nos seguintes links:
+https://www.thingiverse.com/thing:49276
+http://www.tridimake.com/2013/02/how-tun-run-python-cura-plugin-without.html
+https://www.tecrd.com/tools/stl_wood/
+Lixar peças impressas com Baobab.
+Embora o PLA seja um material e, como tal, difícil de lixar, os filamentos de PLA que incorporam madeira tendem a responder melhor ao processo de lixamento.
+O  lixamento torna a superfície das peças mais macia e elimina os vestígios das camadas, mas como contrapartida as peças perdem a cor e adquirem uma aparência esbranquiçada.
+Para lixar uma peça, começamos por usar uma lâmina de modelismo para remover rebarbas, fios, superfícies de contacto com os suportes e outros erros visíveis. Depois lixa-se, começando com uma lixa grossa (nº. 50) e continuando com uma lixa de grão mais fino (nº. 400).
+Após o lixamento, é necessário remover a poeira da superfície da peça com ar comprimido ou água.
+Pintar e envernizar as suas peças.
+Para dar às suas peças o acabamento final, pode pintá-las e envernizá-las.
+Para a pintura, deve usar uma tinta à base de água para madeira. Também é possível pintar as peças de forma caseira e barata usando café. Existem  outros produtos profissionais, como o betume da Judeia, com o qual você  pode obter uma aparência de madeira envelhecida muito realista.
+Quando a peça tiver a aparência desejada e a pintura estiver seca, uma camada de verniz para madeira fixará a cor, dará brilho e fará com que a peça se conserve durante muito tempo.

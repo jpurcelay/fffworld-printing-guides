@@ -1,0 +1,77 @@
+Guide d'impression Baobab
+Qu'est-ce que Baobab?
+Baobab est un filament pour l'impression 3D FFF / FDM basé sur le PLA qui incorpore des particules de bois pour imprimer des objets imitant le bois.
+Pourquoi utiliser Baobab?
+Baobab vous permet de créer des objets avec l'apparence du bois en utilisant une imprimante 3D. C'est un matériau approprié pour imprimer des pièces qui, par leur nature ou leur destination, pourraient bénéficier d'une apparence similaire au bois.
+Un filament idéal pour créer des sculptures, des appliques, des éléments de menuiserie, etc. Il peut également être utilisé en restauration.
+Baobab est compatible avec la plupart des imprimantes 3D FFF / FDM car il ne nécessite pas de lit chauffant et il est imprimé à une température similaire à celle du PLA.
+En incorporant des particules de bois non fusibles, la résistance est inférieure au PLA mais elle est généralement suffisante pour la plupart des applications typiques.
+ne présentant pas de problème d'effet de gauchissement et permet d'imprimer des pièces de grand volume sans craindre de déformation lorsqu'il est refroidi.
+Problèmes \& Solutions
+Comprendre le problème
+Pour obtenir un aspect similaire au bois, ce filament incorpore de vraies particules de bois. La taille et la quantité de ces particules évitent les bourrages, mais encore dans certaines imprimantes et dans certaines circonstances des bourrages peuvent se produire et gâcher l'impression.
+Les bourrages peuvent se produire par deux causes différentes et à deux points différents de la extrémité chaude: la buse et le canon. En cas d'apparition, il est nécessaire d'identifier la cause afin de la résoudre et d'imprimer de manière satisfaisante.
+bourrages de buse
+Les bourrages dans la buse sont causés par l'accumulation de particules de bois dans la buse. Le bois ne peut pas fondre comme le plastique et peut s'accumuler dans la buse pendant l'impression, provoquant un bourrage.
+La taille, la qualité et le matériau de la buse, ainsi que la présence de restes d'autres matériaux sont déterminants dans l'apparition de bourrages dans la buse.
+Si des bourrages de buse se produisent, la meilleure solution consiste à utiliser une buse de plus grand diamètre. En utilisant une buse de 0,6 mm, le problème disparaît dans la plupart des cas.
+Dans notre boutique en ligne, vous pouvez trouver la buse qui convient le mieux à votre imprimante. En outre, si vous achetez un filament Baobab, nous offrons un rabais sur l'achat de buses. \\\\\centerline{\url{https://www.fffworld.com/es/130-nozzles}}
+Bourrages de canon
+Ces bourrages se produisent à cause de l'expansion du filament lorsqu'il est chauffé. Ayant une surface rugueuse en raison de sa teneur en bois, le filament de Baobab produit un plus grand frottement sur les parois intérieures du canon ou du pont thermique.
+Cette friction produit des bourrages et des problèmes d'extrusion dans certaines unités chaudes, en particulier dans celles qui ont un refroidissement médiocre, sans tube en téflon ou avec un usinage de mauvaise qualité.
+Contrôler la rétraction
+Les bourrages dans le canon peuvent être contrôlés en modifiant les paramètres de rétraction. Les paramètres de rétraction appropriés dépendent de chaque extrémité chaude mais l'idée principale est de faire des rétractions longues et rapides pour éviter que l'extrémité du filament ne reste dans la zone la plus chaude du cylindre lorsqu'il n'est pas extrudé. De cette façon, lorsque l'extrémité chaude se déplace entre deux points sans extrusion, l'extrémité du filament reste dans une zone froide, empêchant ainsi l'expansion.
+Nous vous recommandons d'essayer les plages de rétraction suivantes en cas de problèmes de bourrage:
+Vitesse de rétraction:
+Le maximum pris en charge par votre imprimante. Cette valeur peut être comprise entre 50 et 100 mm / s
+Distance de rétraction:
+L'idéal est de mesurer la distance entre la buse et la zone froide d'extrémité chaude. Cette distance peut être comprise entre 4 et 20 mm. En fonction de l’extrémité chaude.
+Augmenter la vitesse
+Une autre stratégie qui permet d'éviter ces problèmes consiste à augmenter la vitesse d'impression afin de laisser moins de temps au filament pour se dilater et potentiellement bloquer le cylindre.
+La vitesse maximale dépend de chaque imprimante mais une vitesse de 80 mm / s est assez bonne.
+Améliorer le refroidissement à chaud
+Les problèmes mentionnés ci-dessus sont causés par le refroidissement déficient de l'extrémité chaude.
+Si vous utilisez un bon système de refroidissement, comme un E3D original qui incorpore un dissipateur thermique et un ventilateur qui le vise directement, ces bourrages ne devraient pas se produire.
+Dans d'autres extrémités chaudes,  placer un ventilateur supplémentaire ou diriger le flux d'air vers le canon atténue la dilatation du filament et peut résoudre les bourrages.
+Dans des pages comme le thingiverse ,peut être trouvé des accessoires imprimables pour différents modèles de extrémités chaudes et d'imprimantes qui supportent un ventilateur et améliorent le refroidissement.
+D'autres solutions efficaces impliquent l'utilisation de brides ou la modification de la position du ventilateur existant de sorte que le flux d'air frappe directement le canon de l'extrémité chaude. Cette option peut être adéquate pour tester la solution rapidement avant d'essayer d'imprimer et d'installer un accessoire tel que ceux mentionnés ci-dessus.
+Mon extrémité chaude s'est bouché, que dois-je faire ?
+Lorsqu'un bourrage se produit, l'extrusion est interrompue et si l'impression n'est pas arrêtée et que l'extrémité chaude est refroidie, la dégradation de la matière à l'intérieur peut se produire dans un pire état.
+Cela se produit parce que lors de l'arrêt pour extruder le filament, il reste immobile à l'intérieur de l'extrémité chaude à la température d'impression. En restant trop longtemps chaud, les plastiques cristallisent et carbonisent, ce qui rend les bourrages plus difficiles à enlever.
+Nous pouvons savoir s'il y a du matériau carbonisé à l'intérieur de la buse s'il est impossible d'extruder manuellement le matériau en appliquant une force modérée.
+Heureusement, les bourrages Baobab sont relativement faciles à enlever en utilisant les bons outils, même lorsque le matériau s'est dégradé.
+Déboucher le trou de la buse
+L'insertion d'une pièce métallique à travers la buse à partir du bas est la première étape pour éliminer un bourrage.
+FFF World met à la disposition de ses clients des aiguilles métalliques flexibles idéales pour cette tâche. Mais n'importe quel objet en métal, assez fort peut être utile. Si vous n'avez pas l'une de ces aiguilles, vous pouvez utiliser un poil métallique préalablement retiré d'une brosse.
+Avec l'extrémité chaude chauffée, insérez l'aiguille à travers le trou de la buse à différents angles afin d'enlever les restes du filament. Pousser manuellement le filament par le haut pour vérifier si le bourrage est parti. Répétez l'opération jusqu'à ce que le matériau s'écoule normalement.
+Méthode de traction à froid
+Cette méthode consiste à essayer d'extraire les restes de filament du haut de l'extrémité chaude en utilisant un autre morceau de filament.
+ Chauffer l'extrémité chaude à la température du dernier matériau utilisé et insérer un morceau de filament à travers le haut de l'extrémité chaude jusqu'à ce qu'il sorte par la buse ou nous ne pouvons pas pousser plus loin. Le filament va fondre et coller aux restes de matière à l'intérieur de l'extrémité chaude. À ce moment, la température est abaissée à 90º si son Baobab ou PLA (ou 110º si son ABS) et le filament à l'intérieur est tiré afin de l'extraire, le reste du matériau qui produit le bourage est également extrait.
+Chaque fois que nous répétons l'opération, le filament extrait devrait sortir plus propre. Répétez le processus jusqu'à ce que le bourrage soit supprimé.
+Vous pouvez en savoir plus sur l'extraction à froid dans ces liens:
+Démonter la buse
+Si tout échoue, la solution est de démonter la buse.
+Il est nécessaire de chauffer l'extrémité chaude et de dévisser la buse avec une clé ou une clé à pipe. Une fois démonté, il devrait être facile d'enlever les restes de matériel qui peuvent rester dans le canon.
+Une fois séparée de l'extrémité chaude, la buse peut être chauffée avec un pistolet à air chaud ou dans une plaque de cuisson en céramique afin d'éliminer les restes de matériau.
+L'introduction de la buse dans l'acétone supprimera le bourrage si elle est ABS. Dans le cas du Baobab ou du PLA, l'acétone ne dissout pas le matériau mais pourrait aider à nettoyer la buse.
+Comme pour donner à vos pièces une finition unique
+Utilisez la vitesse et la température pour modifier la finition des pièces imprimées.
+Dans les filaments à teneur en bois comme le Baobab, il est possible de modifier l'aspect des couches en modifiant la température d'extrusion. En appliquant plus de chaleur, les couches acquièrent une couleur plus foncée.
+En faisant varier la température d'extrusion à travers l'impression, nous obtiendrons des pièces avec une coloration irrégulière, plus semblable au bois naturel qui n'a pas une couleur homogène.
+La vitesse d'extrusion affecte la finition des pièces et peut être modifiée pendant l'impression pour obtenir des couches irrégulières qui ressemblent au bois naturel.
+La meilleure façon de mettre en uvre ces variations est d'utiliser les options disponibles dans les programmes de laminage actuels.
+Simplify3D attribue différents paramètres aux différentes régions du modèle à imprimer:
+https://www.simplify3d.com/support/articles/different-settings-for-different-regions-of-a-model/
+Il existe également un programme qui peut être utilisé indépendamment ou intégré dans Cura comme un plugin qui peut faciliter la tâche de faire varier la température et la vitesse pendant l'impression. Plus d'informations à ce sujet, dans les liens suivants:
+https://www.thingiverse.com/thing:49276
+http://www.tridimake.com/2013/02/how-tun-run-python-cura-plugin-without.html
+https://www.tecrd.com/tools/stl_wood/
+Ponçage des pièces imprimées avec Baobab.
+Bien que le PLA soit un matériau dur et donc difficile à poncer des filaments de PLA qui incorporent du bois, ont tendance à mieux répondre au processus de ponçage.
+Le ponçage rend la surface des pièces plus douce et supprime la trace des couches, mais en contrepartie les pièces perdent leur couleur et acquièrent une apparence blanchâtre.
+Pour poncer une pièce, utilisez une lame modèle pour enlever les bavures, les fils, les surfaces de contact avec des supports et d'autres erreurs visibles. Puis procéder au ponçage avec du papier de verre, en commençant par un gros grain (nº 50) et en continuant avec un papier de verre à grain fin (nº 400).
+Après le ponçage, enlever la poussière de la surface de la pièce avec de l'air comprimé ou avec de l'eau.
+Teindre et vernir vos pièces.
+Pour donner à vos pièces la dernière finition, vous pouvez les teindre et les vernir.
+Pour teindre, utilisez une teinture à bois à base d'eau. Vous pouvez également teindre les pièces de façon artisanale et bon marché en utilisant du café. Il existe d'autres produits professionnels avec lesquels vous pouvez obtenir un look de bois vieilli très réaliste.
+Une fois que la pièce a l'apparence désirée et que le colorant est sec. Une couche de vernis bois, il fixera la couleur, fera briller et fera durer la pièce plus longtemps.

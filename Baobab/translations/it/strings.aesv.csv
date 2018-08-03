@@ -1,0 +1,77 @@
+Guida alla stampa con Baobab
+Cos’è Baobab?
+Baobab è un filamento per stampa 3D FFF/FDM basato su PLA che incorpora particelle di legno per stampare oggetti che imitano il legno.
+Perché usare Baobab?
+Baobab consente di creare oggetti con l’aspetto di legno utilizzando una stampante 3D. Un materiale adatto per stampare pezzi che per loro natura o destinazioni potrebbero trarre beneficio da un aspetto simile al legno.
+Un filamento ideale per creare sculture, portacandele, elementi di carpenteria ecc. Può essere usato anche nella ristorazione.
+Baobab è compatibile con la maggior parte delle stampanti 3D FFF/FDM poiché non richiede un letto riscaldato e viene stampato a temperature simili al PLA.
+Incorporando particelle di legno non fusibili, la resistenza è minore del PLA ma è generalmente abbastanza per la maggior parte delle applicazioni tipiche.
+Non soffre di effetto di torsione e consente la stampa di pezzi di grosso volume senza paura di deformazione a raffreddamento.
+Problemi \& Soluzioni
+Comprendere il problema
+Per ottenere un look simile al legno, questo filamento incorpora delle vere particelle di legno. La dimensione e la quantità di queste particelle evita le ostruzioni, ma comunque in alcune stampanti e sotto alcune circostanze possono verificarsi delle ostruzioni e rovinare la stampa.
+Le ostruzioni possono insorgere per due cause differenti e in due punti differenti dell’hot-end: ugello e fusto. In caso di comparsa, è necessario identificare la causa per poterla risolvere e stampare in maniera soddisfacente.
+Ostruzioni ugello
+Le ostruzioni nell’ugello sono causate dall’accumulo di particelle di legno nell’ugello. Il legno non può sciogliersi come la plastica e può accumularsi nell’ugello durante la stampa causando l’ostruzione.
+La dimensione della qualità, il materiale dell’ugello, e la presenza di resti di altri materiali sono decisivi nella comparsa di ostruzioni nell’ugello.
+Se si verificano ostruzioni dell’ugello, la soluzione migliore è quella di utilizzare un ugello di diametro superiore. Usando un ugello da 0,6 mm il problema scompare nella maggior parte dei casi.
+Nel nostro negozio on-line puoi trovare l’ugello meglio adatto alle tue esigenze. Inoltre se acquisti il filamento Baobab, offriamo uno sconto sull’acquisto degli ugelli. \\\\\centerline{\url{https://www.fffworld.com/es/130-nozzles}}
+Ostruzioni fusto
+Queste ostruzioni si verificano a causa dell’espansione filamento quando si riscalda. Avendo una superficie ruvida in virtù del suo contenuto di legno, il filamento Baobab produce maggior attrito sulle pareti interne del fusto o ponte termico.
+Questa frizione produce ostruzioni e problemi di estrusione in alcuni hot-end, specialmente in quelli con raffreddamento scarso, senza rivestimento tubi in Teflon interno o con macchine di qualità bassa.
+Controllo della retrazione
+Le ostruzioni fusto si possono controllare modificando i parametri di retrazione. Parametri di retrazione adeguata dipendono da ciascun hot-end ma l’idea principale è quella di effettuare retrazioni lunghi e veloci per impedire che il terminale filamento rimanga nella zona più calda del fusto quando non viene estruso. In questo modo quando l’hot-end si sposta fra 2 punti senza estrusione, la punta del filamento rimane in una zona fredda, prevenendo l’espansione.
+Raccomandiamo di provare le seguenti fasce di retrazione in caso di problemi di ostruzione:
+Velocità retrazione:
+Quella massima supportata dalla tua stampante. Questo valore può essere compreso tra 50 e 100 mm/s
+Distanza retrazione:
+L’ideale è misurare la distanza fra ugello e zona fredda dell’hot-end. Questa distanza può essere fra 4 e 20 mm, a seconda dell’hot-end.
+Aumentare la velocità
+Un’altra strategia che aiuta ad evitare questi problemi è aumentare la velocità di stampa per poter dare meno tempo al filamento di espandersi e potenzialmente ostruire il fusto.
+La velocità massima dipende da ciascuna stampante ma una velocità di 80 mm/s va bene.
+Migliorare il raffreddamento dell’hot-end
+I problemi menzionati sopra sono causati da una deficienza di raffreddamento dell’hot-end.
+Usando un buon raffreddamento dell’hot-end, come un E3D originale che incorpora un dissipatore e una ventola che mira direttamente verso di esso, queste ostruzioni non dovrebbero verificarsi.
+In altri hot-end, posizionare una ventola extra o direzionare il flusso d’aria verso il fusto attenua l’espansione del filamento e può risolvere le ostruzioni.
+Su pagine come thingiverse si possono trovare accessori stampabili per diversi modelli di hot-end e stampanti che supportano una ventola che migliorano il raffreddamento.
+Altre soluzioni efficaci coinvolgono l’uso di flange o la modifica della posizione della ventola esistente in modo che il flusso d’aria colpisca direttamente il fusto dell’hot-end. Questa azione potrebbe essere adeguata per testare la soluzione rapidamente prima di avventurarsi a stampare ed installare un accessorio come quelli menzionati sopra.
+Il mio hot-end si è ostruito, e adesso?
+Quando si verifica un’ostruzione, l’estrusione viene interrotta e se la stampa non viene fermata e l’hot-end raffreddato, la degradazione del materiale interno può peggiorare la situazione.
+Questo succede perché quando si interrompe l’estrusione il filamento rimane fermo all’interno dell’hot-end a temperatura di stampa. Rimanendo caldo troppo a lungo, la plastica si cristallizza e carbonizza creando ostruzioni difficili da rimuovere.
+Possiamo sapere se c’è del materiale carbonizzato all’interno dell’ugello se è impossibile estrudere manualmente il materiale applicando una forza moderata.
+Fortunatamente, le ostruzioni di Baobab sono relativamente facile da rimuovere utilizzando gli strumenti giusti, anche quando il materiale si è degradato.
+Liberare il foro ugello
+inserire un oggetto metallico attraverso l’ugello dal fondo è il primo passaggio per rimuovere un’ostruzione.
+FFF world mette a disposizione dei suoi clienti degli aghi in metallo flessibile ideali per questo compito. Ma qualsiasi oggetto in metallo, abbastanza forte da non spezzarsi può essere utile. Se non hai uno di questi aghi, puoi usare una setola metallica rimossa da una spazzola.
+Con l’hot-end riscaldato, inserisci l’ago attraverso il foro dell’ugello ad angoli diversi per poter rimuovere i resti del filamento. Spingi manualmente il filamento dalla cima per controllare che l’ostruzione se ne sia andata. Ripeti l’operazione fino a che il materiale non scorre normalmente.
+Metodo cold-pulling
+Questo metodo consiste nel cercare di estrarre i resti di filamento dalla parte superiore dell’hot-end utilizzando un altro pezzo di filamento.
+Scaldare l’hot-end alla temperatura dell’ultimo materiale usato ed inserire un pezzo di filamento attraverso la parte superiore dell’hot-end fino a che non esce dall’ugello o fino a che non riusciamo più a spingere. Il filamento si scioglierà e si attaccherà ai resti del materiale all’interno dell’hot-end. Ora, la temperatura si abbassa a 90 ºC se è Baobab o PLA (o 110 ºC in caso di ABS) e il filamento all’interno viene tirato per poterlo estrarre, il materiale rimanente che produce l’ostruzione viene anch’esso estratto.
+Ogni volta che ripetiamo l’operazione il filamento estratto dovrebbe venire fuori più pulito. Ripetere il processo fino a che non si rimuove l’ostruzione.
+Si può leggere di più sul cold-pulling a questi link:
+Smontare l’ugello
+Se non funziona nient’altro, la soluzione è quella di smontare l’ugello.
+È necessario scaldare l’hot-end e evitare l’ugello con una chiave inglese o una chiave stringitubo. Una volta smontato, dovrebbe essere facile rimuovere i resti del materiale che possono essere rimasti nel fusto.
+Una volta separato dall’hot-end, l’ugello può essere riscaldato con una pistola ad aria calda o un fornello ceramico per poter rimuovere i resti di materiale.
+Introdurre l’ugello in acetone rimuove l’ostruzione se si tratta di ABS. Nel caso di Baobab o PLA, l’acetone non dissolve il materiale ma potrebbe aiutare a pulire l’ugello.
+Metti mi piace per dare ai tuoi pezzi una finitura unica
+Usa la velocità e la temperatura modificare la finitura delle parti stampate.
+Nei filamenti con contenuto di legno come Baobab, c’è la possibilità di variare l’aspetto degli strati modificando la temperatura di estrusione. Quando si applica più calore, gli strati guadagnano un colore più scuro.
+Variando la temperatura di estrusione attraverso la stampa otterremo una colorazione irregolare dei pezzi, più simile al legno naturale che non presenta un colore omogeneo.
+La velocità di estrusione influisce sulla finitura dei pezzi e può essere variata durante la stampa per ottenere strati irregolari che somigliano al legno naturale.
+Il modo migliore per implementare queste variazioni è utilizzando le opzioni disponibili nei gli attuali programmi di laminazione.
+Simplify3D assegna parametri diversi alle differenti regioni del modello da stampare:
+https://www.simplify3d.com/support/articles/different-settings-for-different-regions-of-a-model/
+C’è anche un programma che può essere usato indipendentemente o integrato in Cura come plugin che può rendere più semplice fare variare la temperatura e la velocità durante la stampa. Maggiori informazioni nei link seguenti:
+https://www.thingiverse.com/thing:49276
+http://www.tridimake.com/2013/02/how-tun-run-python-cura-plugin-without.html
+https://www.tecrd.com/tools/stl_wood/
+Sabbiare pezzi stampati con Baobab.
+Anche se il PLA è un materiale duro e perciò è difficile sabbiare filamenti PLA che incorporano in legno, tende a rispondere meglio al processo di sabbiatura.
+La sabbiatura rende la superficie del pezzo più morbida e rimuove le tracce delle stratificazioni, ma come svantaggio i pezzi perdono colore e assumono un aspetto biancastro.
+Per sabbiare un pezzo, usare una lama per rimuovere segni, filettature, superfici di contatto con i supporti e altri visibili. Procedere poi alla sabbiatura con carta vetrata, iniziando con grana grezza (50) e continuando con carta vetrata a grana più fine (400).
+Dopo la sabbiatura, rimuovere la polvere dalla superficie del pezzo con aria compressa o acqua.
+Tingere e laccare i pezzi.
+Perdonare ai pezzi l’ultima finitura si possono tingere e la kare.
+Per la tintura, utilizzare un impregnante a base acqua. Si possono anche tingere i pezzi in modo casalingo ed economico utilizzando il caffè. Ci sono anche altri prodotti professionali che si possono acquistare per avere un aspetto di legno invecchiato molto realistico.
+Una volta che il pezzo ha l’aspetto desiderato e la tintura asciutta, uno strato di laccatura per legno potrà fissare il colore, facendolo brillare e facendo sì che il pezzo duri più a lungo.

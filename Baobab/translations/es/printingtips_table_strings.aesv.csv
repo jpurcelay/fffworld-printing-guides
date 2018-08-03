@@ -1,0 +1,6 @@
+Diámetro de nozzle recomendado~0.6 mm
+Temperatura recomendada (hot-end)~200ºc
+Temperatura recomendada (cama caliente)~40º - No necesita
+Velocidad recomendada de impresión~80 mm/s
+Distancia de retracción~Depende del hot-end (Entre 4 y 20 mm)
+Velocidad de retracción~La máxima soportada (Entre 50 y 100 mm/s)

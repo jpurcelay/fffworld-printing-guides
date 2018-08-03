@@ -1,28 +1,27 @@
 \babel@toc {spanish}{}
-\contentsline {section}{\numberline {1}\IeC {\textquestiondown }Qu\IeC {\'e} es FlexiSMART?}{4}{section.1}
-\contentsline {section}{\numberline {2}\IeC {\textquestiondown }Por qu\IeC {\'e} usar FlexiSMART?}{4}{section.2}
-\contentsline {section}{\numberline {3}Ficha t\IeC {\'e}cnica y par\IeC {\'a}metros de impresi\IeC {\'o}n}{4}{section.3}
-\contentsline {section}{\numberline {4}Problemas y soluciones}{5}{section.4}
-\contentsline {subsection}{\numberline {4.1}Problemas al extruir FlexiSMART}{5}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Preparando el extrusor para imprimir FlexiSMART}{6}{subsection.4.2}
-\contentsline {subsubsection}{\numberline {4.2.1}Modificar tu extrusor}{6}{subsubsection.4.2.1}
-\contentsline {paragraph}{Limar el conducto por el que el filamento accede al hot-end}{6}{section*.6}
-\contentsline {paragraph}{Insertar tubo de tefl\IeC {\'o}n en el extrusor}{6}{section*.7}
-\contentsline {paragraph}{Imprimir una gu\IeC {\'\i }a para el filamento y colocarla en el extrusor}{7}{section*.9}
-\contentsline {paragraph}{Ajustando la presi\IeC {\'o}n del drive-gear sobre el filamento}{8}{section*.11}
-\contentsline {paragraph}{A\IeC {\~n}adiendo tensi\IeC {\'o}n entre la bobina y el extrusor}{8}{section*.13}
-\contentsline {subsubsection}{\numberline {4.2.2}Sustituir tu extrusor por uno optimizado}{9}{subsubsection.4.2.2}
-\contentsline {paragraph}{Extrusores imprimibles DIY}{9}{section*.15}
-\contentsline {paragraph}{Extrusores comerciales}{10}{section*.18}
-\contentsline {section}{\numberline {5}Consejos para un uso \IeC {\'o}ptimo de FlexiSMART}{11}{section.5}
-\contentsline {subsection}{\numberline {5.1}La retracci\IeC {\'o}n}{11}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Impresi\IeC {\'o}n secuencial}{12}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}La primera capa}{13}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Consejos de laminaci\IeC {\'o}n}{14}{subsection.5.4}
-\contentsline {subsubsection}{\numberline {5.4.1}La altura de capa}{14}{subsubsection.5.4.1}
-\contentsline {subsubsection}{\numberline {5.4.2}Los top layers y perimetros}{14}{subsubsection.5.4.2}
-\contentsline {subsubsection}{\numberline {5.4.3}Influencia del infill en la flexibilidad}{14}{subsubsection.5.4.3}
-\contentsline {subsection}{\numberline {5.5}Utilizaci\IeC {\'o}n de un nozzle de mayor tama\IeC {\~n}o}{14}{subsection.5.5}
-\contentsline {subsection}{\numberline {5.6}Soporte para la bobina}{15}{subsection.5.6}
-\contentsline {section}{\numberline {6}\IeC {\textquestiondown }Quieres apoyar nuestro proyecto?}{15}{section.6}
-\contentsline {subsection}{\numberline {6.1}Another filaments with outstanding properties available now in Amazon}{16}{subsection.6.1}
+\contentsline {section}{\numberline {1}\IeC {\textquestiondown }Qu\IeC {\'e} es FlexiSMART?}{3}{section.1}
+\contentsline {section}{\numberline {2}\IeC {\textquestiondown }Por qu\IeC {\'e} usar FlexiSMART?}{3}{section.2}
+\contentsline {section}{\numberline {3}Ficha t\IeC {\'e}cnica y par\IeC {\'a}metros de impresi\IeC {\'o}n}{3}{section.3}
+\contentsline {section}{\numberline {4}Problemas y soluciones}{4}{section.4}
+\contentsline {subsection}{\numberline {4.1}Problemas al extruir FlexiSMART}{4}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Preparando el extrusor para imprimir FlexiSMART}{5}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}Modificar tu extrusor}{5}{subsubsection.4.2.1}
+\contentsline {paragraph}{Limar el conducto por el que el filamento accede al hot-end}{5}{section*.6}
+\contentsline {paragraph}{Insertar tubo de tefl\IeC {\'o}n en el extrusor}{5}{section*.7}
+\contentsline {paragraph}{Imprimir una gu\IeC {\'\i }a para el filamento y colocarla en el extrusor}{6}{section*.9}
+\contentsline {paragraph}{Ajustando la presi\IeC {\'o}n del drive-gear sobre el filamento}{7}{section*.11}
+\contentsline {paragraph}{A\IeC {\~n}adiendo tensi\IeC {\'o}n entre la bobina y el extrusor}{7}{section*.13}
+\contentsline {subsubsection}{\numberline {4.2.2}Sustituir tu extrusor por uno optimizado}{8}{subsubsection.4.2.2}
+\contentsline {paragraph}{Extrusores imprimibles DIY}{8}{section*.15}
+\contentsline {paragraph}{Extrusores comerciales}{9}{section*.18}
+\contentsline {section}{\numberline {5}Consejos para un uso \IeC {\'o}ptimo de FlexiSMART}{10}{section.5}
+\contentsline {subsection}{\numberline {5.1}La retracci\IeC {\'o}n}{10}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Impresi\IeC {\'o}n secuencial}{11}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}La primera capa}{12}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Consejos de laminaci\IeC {\'o}n}{13}{subsection.5.4}
+\contentsline {subsubsection}{\numberline {5.4.1}La altura de capa}{13}{subsubsection.5.4.1}
+\contentsline {subsubsection}{\numberline {5.4.2}Los top layers y perimetros}{13}{subsubsection.5.4.2}
+\contentsline {subsubsection}{\numberline {5.4.3}Influencia del infill en la flexibilidad}{13}{subsubsection.5.4.3}
+\contentsline {subsection}{\numberline {5.5}Utilizaci\IeC {\'o}n de un nozzle de mayor tama\IeC {\~n}o}{13}{subsection.5.5}
+\contentsline {section}{\numberline {6}\IeC {\textquestiondown }Quieres apoyar nuestro proyecto?}{14}{section.6}
+\contentsline {subsection}{\numberline {6.1}Another filaments with outstanding properties available now in Amazon}{14}{subsection.6.1}
